@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		704680E2096AE22B17526895 /* Pods_AppWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924877EDEE7DB5BB116D3811 /* Pods_AppWeather.framework */; };
+		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
 		A57AD6411CFF0B9D009DDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57AD63F1CFF0B9D009DDFE4 /* Main.storyboard */; };
 		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
-		A57AD6461CFF0B9D009DDFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6441CFF0B9D009DDFE4 /* LaunchScreen.storyboard */; };
 		E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */; };
 		E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F11D02EED300F10EBC /* ModelController.swift */; };
 		E9E2C3F81D02EED300F10EBC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F41D02EED300F10EBC /* DataViewController.swift */; };
@@ -21,10 +21,10 @@
 		7FEB38CDACBAF44CE4352BA5 /* Pods-AppWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppWeather/Pods-AppWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		9022C336AA7765841E375F98 /* Pods-AppWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppWeather/Pods-AppWeather.release.xcconfig"; sourceTree = "<group>"; };
 		924877EDEE7DB5BB116D3811 /* Pods_AppWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52B91701D03089700D26A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57AD6341CFF0B9D009DDFE4 /* AppWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57AD6401CFF0B9D009DDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A57AD6451CFF0B9D009DDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E2C3F11D02EED300F10EBC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			children = (
 				E9E2C3EE1D02EED300F10EBC /* Classes */,
 				A57AD63F1CFF0B9D009DDFE4 /* Main.storyboard */,
-				A57AD6441CFF0B9D009DDFE4 /* LaunchScreen.storyboard */,
+				A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */,
 				A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */,
 				A57AD6471CFF0B9D009DDFE4 /* Info.plist */,
 			);
@@ -187,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57AD6461CFF0B9D009DDFE4 /* LaunchScreen.storyboard in Resources */,
+				A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */,
 				A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */,
 				A57AD6411CFF0B9D009DDFE4 /* Main.storyboard in Resources */,
 			);
@@ -258,20 +258,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52B91701D03089700D26A59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		A57AD63F1CFF0B9D009DDFE4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A57AD6401CFF0B9D009DDFE4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A57AD6441CFF0B9D009DDFE4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A57AD6451CFF0B9D009DDFE4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
