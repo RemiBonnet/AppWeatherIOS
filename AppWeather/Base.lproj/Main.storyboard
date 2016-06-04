@@ -76,7 +76,6 @@
         <!--Settings View Controller-->
         <scene sceneID="cDO-wN-UPO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LEu-E5-91t" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5pD-D2-67B" customClass="SettingsViewController" customModule="AppWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WZX-Ht-bJo"/>
@@ -96,6 +95,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEu-E5-91t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597" y="520"/>
         </scene>

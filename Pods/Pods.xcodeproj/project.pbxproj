@@ -7,93 +7,166 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1964F8D2D3570E35524C58704A1CF793 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		38FDBFB13267A6E7D3D24F25F20F308F /* Pods-AppWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FCE10F8239137C2B26D071722BA94 /* Pods-AppWeather-dummy.m */; };
-		45D926F80BF66C1993FA3DB3D553D95A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		83A6B9B7A9E4ACF0CAF8598BFB6978FD /* Pods-AppWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EAFA5735597D3AA8CEDEB31906C2F4 /* Pods-AppWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FB0D2D6732DCBCA985B12E917AA5E7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CCF7E2CDF1A93EE0AB9CD75F1E2A1205 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF8BD8BA55D79852EC6C051DC18577DF /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		036F34CEEB075B4967E66B39F30F0770 /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84747799AEEB36BA961803DA5C776030 /* M13CheckboxGestureRecognizer.swift */; };
+		096EFF0F52924F21FDCB53AB634268BB /* M13CheckboxFillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DF5AA07EBC0890A7816FB5013B56B3 /* M13CheckboxFillManager.swift */; };
+		1614233200F77EEC7A5AEEB73F97FD04 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E4758987146A5789AE91405CFE066 /* M13Checkbox+IB.swift */; };
+		17978EDBED95F907EE4FCB70AC5EE7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */; };
+		2161CB44569782E42E45439692FBE3ED /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 651FD0F59E3D5C57D1EFC4440FC6F621 /* M13Checkbox-dummy.m */; };
+		2D39AFF4DCB31D402488B07909551F55 /* M13CheckboxSpiralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1BAD6DB81752770EF65D5FBA619A51 /* M13CheckboxSpiralManager.swift */; };
+		305133BCAA8380E5E6E9AF4FE3AEB087 /* M13CheckboxDotPathPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4575386E552CB49D07E35B5CC91BDA9 /* M13CheckboxDotPathPresets.swift */; };
+		32CB1BC19B02FE4825179DFA8E0C9400 /* Pods-AppWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EAFA5735597D3AA8CEDEB31906C2F4 /* Pods-AppWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3391A826E404FE0E7CE9C7691AD35D85 /* M13CheckboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C7D4E95F33656D2508F544B46DCC0 /* M13CheckboxManager.swift */; };
+		425E6D3816E71420E9BFC1AC3B561656 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */; };
+		479C35E70BD65802CFFB5ABC583ABE40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		4E99830DDC4A9A73AFEFBAC6A631CFF9 /* M13CheckboxPathPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A736FE77977A43CFB892D11D036E /* M13CheckboxPathPresets.swift */; };
+		5E628972EE280BC27981B48D70FA5C66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		7A6D04E6391AB243F35BAE217FF6F81D /* M13CheckboxAnimationPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1364EA70D0964153A8DFC8087CC74B4 /* M13CheckboxAnimationPresets.swift */; };
+		8002901EEAC6026FB9EA6777BC8B1C0D /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594780FFB934DE939BF2B258735EE7CE /* M13Checkbox.swift */; };
+		8403A58D296705E8E81311582C701D90 /* Pods-AppWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FCE10F8239137C2B26D071722BA94 /* Pods-AppWeather-dummy.m */; };
+		84E341BC8535DD01582617F2C0DA35BD /* M13CheckboxExpandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB079BB80A1C52DB875DEE6B4551DDD /* M13CheckboxExpandManager.swift */; };
+		89746AFED1601736D8E1F149AABD1A40 /* M13CheckboxBounceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F656CC7C089E189B8F380C26317A85 /* M13CheckboxBounceManager.swift */; };
+		928EBAF19E6D4739410ACCC4DE0249F5 /* M13CheckboxSpiralPathPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE733134DD4FCAE8C54A25C53933A5D3 /* M13CheckboxSpiralPathPresets.swift */; };
+		AB83B753F91649BFBAAFAF8FE7BBA526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		BC3B9E7AFBEDC160E284B9DE85BBC0FF /* M13CheckboxFadeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0198EDE3DF2459EB5EFD60BF886C79 /* M13CheckboxFadeManager.swift */; };
+		BF82975857F88C2BCC8C5CABDADD06A2 /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6627B70EA643F8857A26B046ABD8B0 /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7C552ACD6156D56AE4BE1F228CD688 /* M13CheckboxStrokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AE8ED8484605D0C2E9D5B432531B4 /* M13CheckboxStrokeManager.swift */; };
+		E58F9469D865CC77B3E8154614162451 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA908A143E53370A3F21D02F57448939 /* SwiftyJSON.swift */; };
+		EDF632F8DA0A3973771A500A16334652 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 989297061C4CC9AF4C537E3357C6CFE3 /* SwiftyJSON-dummy.m */; };
+		F31B4CB5FED9CA97A27BD9EA00E2AFB7 /* M13CheckboxFlatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5EA2C5D20AD0D64F4C44C20ADD999 /* M13CheckboxFlatManager.swift */; };
+		F44047DF453E3DCEE6C2D09BC695AB39 /* M13CheckboxDotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D5ED285A6F518624829BE78C5F715 /* M13CheckboxDotManager.swift */; };
+		F463AA54166CFE88A41F3CBF7E15453E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DA629A8DBBADAD42885340639588EC /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		72CC0FEA50C7D630500394272C4A9C0E /* PBXContainerItemProxy */ = {
+		0307C2FA20A76CFBF534E4009FA8D454 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B32A01698D950537D76A8DF322C5908D;
+			remoteGlobalIDString = E018CE2B5E865B0467DE7E43EF3D8303;
 			remoteInfo = SwiftyJSON;
+		};
+		F6552057AD9152C9F7F1B7C7C433EC85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3AFC0E9905CA362D94DA496A23E2DD;
+			remoteInfo = M13Checkbox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E1DDEBDF95D5F8A610984892BAEEF7 /* Pods-AppWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppWeather.release.xcconfig"; sourceTree = "<group>"; };
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		06DA629A8DBBADAD42885340639588EC /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		148E4758987146A5789AE91405CFE066 /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "M13Checkbox+IB.swift"; path = "Sources/M13Checkbox+IB.swift"; sourceTree = "<group>"; };
 		1CBD27C53E6981BB1DDF7B176229E847 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E7545242CDECA9048AC4816B9CE777 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		22EAFA5735597D3AA8CEDEB31906C2F4 /* Pods-AppWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppWeather-umbrella.h"; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		2F0198EDE3DF2459EB5EFD60BF886C79 /* M13CheckboxFadeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFadeManager.swift; path = Sources/Managers/M13CheckboxFadeManager.swift; sourceTree = "<group>"; };
 		35720F60375537F42E6D038F34A71243 /* Pods-AppWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppWeather.modulemap"; sourceTree = "<group>"; };
+		372D5ED285A6F518624829BE78C5F715 /* M13CheckboxDotManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotManager.swift; path = Sources/Managers/M13CheckboxDotManager.swift; sourceTree = "<group>"; };
+		3C9854452B704969D40D932335DEE0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		410BE5C0C0E3F2BB9330CCB403D4A811 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1BAD6DB81752770EF65D5FBA619A51 /* M13CheckboxSpiralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralManager.swift; path = Sources/Managers/M13CheckboxSpiralManager.swift; sourceTree = "<group>"; };
+		4E6627B70EA643F8857A26B046ABD8B0 /* M13Checkbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-umbrella.h"; sourceTree = "<group>"; };
 		4EF40DE2DA2F8226E1C55E25DCB0D3A4 /* Pods-AppWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		594780FFB934DE939BF2B258735EE7CE /* M13Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13Checkbox.swift; path = Sources/M13Checkbox.swift; sourceTree = "<group>"; };
+		5EB079BB80A1C52DB875DEE6B4551DDD /* M13CheckboxExpandManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxExpandManager.swift; path = Sources/Managers/M13CheckboxExpandManager.swift; sourceTree = "<group>"; };
+		651FD0F59E3D5C57D1EFC4440FC6F621 /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
+		782444104783AD5C8BDB23A89606E521 /* Pods_AppWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A6DA9BAB198A2166234BA821593667 /* Pods-AppWeather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppWeather-resources.sh"; sourceTree = "<group>"; };
-		7D4B1E4FC9B48B4ABA4554129D2631FA /* Pods_AppWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DF9E7F2EC9616F9B60441C9FA8AA942 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8439EB7AB94DA1FC6561846AD73BC639 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84747799AEEB36BA961803DA5C776030 /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxGestureRecognizer.swift; path = Sources/M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
+		861D3B4591A997B4228CBA60515D4197 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		8A4AE8ED8484605D0C2E9D5B432531B4 /* M13CheckboxStrokeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxStrokeManager.swift; path = Sources/Managers/M13CheckboxStrokeManager.swift; sourceTree = "<group>"; };
+		8CBF0771B18A021CFCF72DE722DD3787 /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958C7D4E95F33656D2508F544B46DCC0 /* M13CheckboxManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxManager.swift; path = Sources/M13CheckboxManager.swift; sourceTree = "<group>"; };
+		989297061C4CC9AF4C537E3357C6CFE3 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		A3358194CBCE2D983B326B5045117149 /* Pods-AppWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DF5AA07EBC0890A7816FB5013B56B3 /* M13CheckboxFillManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFillManager.swift; path = Sources/Managers/M13CheckboxFillManager.swift; sourceTree = "<group>"; };
+		B2A2390207E803AF63E2ECF60B61BED7 /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
+		B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BDC97EC624C608383EA05AC830BAB11B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C277E279652A2C1C3F91956753BCBCD0 /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
+		CA908A143E53370A3F21D02F57448939 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		CBF2924E6E167D86B0EFF5BFC86F45F4 /* Pods-AppWeather-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppWeather-frameworks.sh"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D03FCE10F8239137C2B26D071722BA94 /* Pods-AppWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppWeather-dummy.m"; sourceTree = "<group>"; };
 		D437C07F54277D8A1705BEB4657946B5 /* Pods-AppWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppWeather-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5C6A736FE77977A43CFB892D11D036E /* M13CheckboxPathPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxPathPresets.swift; path = Sources/M13CheckboxPathPresets.swift; sourceTree = "<group>"; };
+		D6F5EA2C5D20AD0D64F4C44C20ADD999 /* M13CheckboxFlatManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFlatManager.swift; path = Sources/Managers/M13CheckboxFlatManager.swift; sourceTree = "<group>"; };
+		E1364EA70D0964153A8DFC8087CC74B4 /* M13CheckboxAnimationPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAnimationPresets.swift; path = Sources/M13CheckboxAnimationPresets.swift; sourceTree = "<group>"; };
+		E239BD2447990F28EF26DE9524EC2178 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4575386E552CB49D07E35B5CC91BDA9 /* M13CheckboxDotPathPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotPathPresets.swift; path = Sources/Presets/M13CheckboxDotPathPresets.swift; sourceTree = "<group>"; };
+		E46E155BA17B5C187769604924678008 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E9F656CC7C089E189B8F380C26317A85 /* M13CheckboxBounceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxBounceManager.swift; path = Sources/Managers/M13CheckboxBounceManager.swift; sourceTree = "<group>"; };
+		FE733134DD4FCAE8C54A25C53933A5D3 /* M13CheckboxSpiralPathPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralPathPresets.swift; path = Sources/Presets/M13CheckboxSpiralPathPresets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41F6173CA9DA06ADDF9F87D48421C092 /* Frameworks */ = {
+		3BE8433362D0AB619D496EB7A78DAE26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D926F80BF66C1993FA3DB3D553D95A /* Foundation.framework in Frameworks */,
+				5E628972EE280BC27981B48D70FA5C66 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8986B685C5FEA5792D1B6673A713C820 /* Frameworks */ = {
+		533F032C381B7A65817590631F5A904B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB0D2D6732DCBCA985B12E917AA5E7F /* Foundation.framework in Frameworks */,
+				479C35E70BD65802CFFB5ABC583ABE40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58399B1798FDC7D17507985A02D94969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425E6D3816E71420E9BFC1AC3B561656 /* CoreGraphics.framework in Frameworks */,
+				AB83B753F91649BFBAAFAF8FE7BBA526 /* Foundation.framework in Frameworks */,
+				17978EDBED95F907EE4FCB70AC5EE7FB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		0A68FE8A6158D395EC4CB10F8472F165 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */,
+				3C9854452B704969D40D932335DEE0FF /* Foundation.framework */,
+				0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+				0A68FE8A6158D395EC4CB10F8472F165 /* iOS */,
 			);
-			path = SwiftyJSON;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C6148B5D4118E63F39094D86E13C084 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E974083067EB8B755B4F2D7F4383B8EE /* M13Checkbox */,
+				AB97DF225B0BDD6F2316999F7B6D19A8 /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				B6ECE7CEC189160D6BADEC45823C7FEB /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				6C6148B5D4118E63F39094D86E13C084 /* Pods */,
+				C49CB330CA563B277EA3BAA56D3C4F77 /* Products */,
 				8127717EEA87D4D192E89A9359331EA0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -106,43 +179,51 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+		A3BDB1B1746C71F2DCBE262D2AAC4854 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+				BDC97EC624C608383EA05AC830BAB11B /* Info.plist */,
+				861D3B4591A997B4228CBA60515D4197 /* SwiftyJSON.modulemap */,
+				E46E155BA17B5C187769604924678008 /* SwiftyJSON.xcconfig */,
+				989297061C4CC9AF4C537E3357C6CFE3 /* SwiftyJSON-dummy.m */,
+				21E7545242CDECA9048AC4816B9CE777 /* SwiftyJSON-prefix.pch */,
+				06DA629A8DBBADAD42885340639588EC /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		B6ECE7CEC189160D6BADEC45823C7FEB /* Products */ = {
+		AB97DF225B0BDD6F2316999F7B6D19A8 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				7D4B1E4FC9B48B4ABA4554129D2631FA /* Pods_AppWeather.framework */,
-				8DF9E7F2EC9616F9B60441C9FA8AA942 /* SwiftyJSON.framework */,
+				CA908A143E53370A3F21D02F57448939 /* SwiftyJSON.swift */,
+				A3BDB1B1746C71F2DCBE262D2AAC4854 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		B3A6C3621A3A0AD317CD5959F40CEE2B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8439EB7AB94DA1FC6561846AD73BC639 /* Info.plist */,
+				8CBF0771B18A021CFCF72DE722DD3787 /* M13Checkbox.modulemap */,
+				B2A2390207E803AF63E2ECF60B61BED7 /* M13Checkbox.xcconfig */,
+				651FD0F59E3D5C57D1EFC4440FC6F621 /* M13Checkbox-dummy.m */,
+				C277E279652A2C1C3F91956753BCBCD0 /* M13Checkbox-prefix.pch */,
+				4E6627B70EA643F8857A26B046ABD8B0 /* M13Checkbox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/M13Checkbox";
+			sourceTree = "<group>";
+		};
+		C49CB330CA563B277EA3BAA56D3C4F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				410BE5C0C0E3F2BB9330CCB403D4A811 /* M13Checkbox.framework */,
+				782444104783AD5C8BDB23A89606E521 /* Pods_AppWeather.framework */,
+				E239BD2447990F28EF26DE9524EC2178 /* SwiftyJSON.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		DF47229DD230C929A5699B3577DB28B5 /* Pods-AppWeather */ = {
@@ -163,53 +244,86 @@
 			path = "Target Support Files/Pods-AppWeather";
 			sourceTree = "<group>";
 		};
+		E974083067EB8B755B4F2D7F4383B8EE /* M13Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				594780FFB934DE939BF2B258735EE7CE /* M13Checkbox.swift */,
+				148E4758987146A5789AE91405CFE066 /* M13Checkbox+IB.swift */,
+				E1364EA70D0964153A8DFC8087CC74B4 /* M13CheckboxAnimationPresets.swift */,
+				E9F656CC7C089E189B8F380C26317A85 /* M13CheckboxBounceManager.swift */,
+				372D5ED285A6F518624829BE78C5F715 /* M13CheckboxDotManager.swift */,
+				E4575386E552CB49D07E35B5CC91BDA9 /* M13CheckboxDotPathPresets.swift */,
+				5EB079BB80A1C52DB875DEE6B4551DDD /* M13CheckboxExpandManager.swift */,
+				2F0198EDE3DF2459EB5EFD60BF886C79 /* M13CheckboxFadeManager.swift */,
+				A5DF5AA07EBC0890A7816FB5013B56B3 /* M13CheckboxFillManager.swift */,
+				D6F5EA2C5D20AD0D64F4C44C20ADD999 /* M13CheckboxFlatManager.swift */,
+				84747799AEEB36BA961803DA5C776030 /* M13CheckboxGestureRecognizer.swift */,
+				958C7D4E95F33656D2508F544B46DCC0 /* M13CheckboxManager.swift */,
+				D5C6A736FE77977A43CFB892D11D036E /* M13CheckboxPathPresets.swift */,
+				4B1BAD6DB81752770EF65D5FBA619A51 /* M13CheckboxSpiralManager.swift */,
+				FE733134DD4FCAE8C54A25C53933A5D3 /* M13CheckboxSpiralPathPresets.swift */,
+				8A4AE8ED8484605D0C2E9D5B432531B4 /* M13CheckboxStrokeManager.swift */,
+				B3A6C3621A3A0AD317CD5959F40CEE2B /* Support Files */,
+			);
+			path = M13Checkbox;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		67F9009A633BBC4AA3A75D9ABDC0C0DD /* Headers */ = {
+		227E3CBCC55A04FCCD8C019832A11234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A6B9B7A9E4ACF0CAF8598BFB6978FD /* Pods-AppWeather-umbrella.h in Headers */,
+				BF82975857F88C2BCC8C5CABDADD06A2 /* M13Checkbox-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDACB0771E58AAE9C1B614EC3D7B08B4 /* Headers */ = {
+		76EB33385C9B29656D4E49C1BA24C268 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF7E2CDF1A93EE0AB9CD75F1E2A1205 /* SwiftyJSON-umbrella.h in Headers */,
+				F463AA54166CFE88A41F3CBF7E15453E /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B70893FE1B84CD2045B3769DF726630 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CB1BC19B02FE4825179DFA8E0C9400 /* Pods-AppWeather-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11C397B1D57301DDE3F72C615D515EFB /* Pods-AppWeather */ = {
+		62729770A895C9932776877360E6E787 /* Pods-AppWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 186FD676C5CD61E568AE766B5B33530C /* Build configuration list for PBXNativeTarget "Pods-AppWeather" */;
+			buildConfigurationList = 397960DC62DDB25DFBB9F93D6BDC543E /* Build configuration list for PBXNativeTarget "Pods-AppWeather" */;
 			buildPhases = (
-				50A4AC263B91DA883789A26A12A3FDCD /* Sources */,
-				8986B685C5FEA5792D1B6673A713C820 /* Frameworks */,
-				67F9009A633BBC4AA3A75D9ABDC0C0DD /* Headers */,
+				5DB63CA8A05A035F3075979DDB05A783 /* Sources */,
+				3BE8433362D0AB619D496EB7A78DAE26 /* Frameworks */,
+				8B70893FE1B84CD2045B3769DF726630 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0CFCD80C549D98B30E25EC6C208FE52 /* PBXTargetDependency */,
+				90F568179CD5C20792B3B01C9CEE4D34 /* PBXTargetDependency */,
+				89C82DBC5094BCA7C16F109F91590F5B /* PBXTargetDependency */,
 			);
 			name = "Pods-AppWeather";
 			productName = "Pods-AppWeather";
-			productReference = 7D4B1E4FC9B48B4ABA4554129D2631FA /* Pods_AppWeather.framework */;
+			productReference = 782444104783AD5C8BDB23A89606E521 /* Pods_AppWeather.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B32A01698D950537D76A8DF322C5908D /* SwiftyJSON */ = {
+		E018CE2B5E865B0467DE7E43EF3D8303 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66C2BC3422F2EBAA012038E4D16DB870 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 32D89399F495EA2A53CEA20C06221712 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				25FA1026542F9D9809DC983A58FDC3FB /* Sources */,
-				41F6173CA9DA06ADDF9F87D48421C092 /* Frameworks */,
-				BDACB0771E58AAE9C1B614EC3D7B08B4 /* Headers */,
+				642D9A293FB64D4D4428B90316BC3F0F /* Sources */,
+				533F032C381B7A65817590631F5A904B /* Frameworks */,
+				76EB33385C9B29656D4E49C1BA24C268 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -217,7 +331,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 8DF9E7F2EC9616F9B60441C9FA8AA942 /* SwiftyJSON.framework */;
+			productReference = E239BD2447990F28EF26DE9524EC2178 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED3AFC0E9905CA362D94DA496A23E2DD /* M13Checkbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDB7EEF73FAC4784FB37CAC86AD636EC /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
+			buildPhases = (
+				543C4BC81F4224D82B158B6D814B8FA1 /* Sources */,
+				58399B1798FDC7D17507985A02D94969 /* Frameworks */,
+				227E3CBCC55A04FCCD8C019832A11234 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13Checkbox;
+			productName = M13Checkbox;
+			productReference = 410BE5C0C0E3F2BB9330CCB403D4A811 /* M13Checkbox.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,53 +368,143 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B6ECE7CEC189160D6BADEC45823C7FEB /* Products */;
+			productRefGroup = C49CB330CA563B277EA3BAA56D3C4F77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11C397B1D57301DDE3F72C615D515EFB /* Pods-AppWeather */,
-				B32A01698D950537D76A8DF322C5908D /* SwiftyJSON */,
+				ED3AFC0E9905CA362D94DA496A23E2DD /* M13Checkbox */,
+				62729770A895C9932776877360E6E787 /* Pods-AppWeather */,
+				E018CE2B5E865B0467DE7E43EF3D8303 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25FA1026542F9D9809DC983A58FDC3FB /* Sources */ = {
+		543C4BC81F4224D82B158B6D814B8FA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF8BD8BA55D79852EC6C051DC18577DF /* SwiftyJSON-dummy.m in Sources */,
-				1964F8D2D3570E35524C58704A1CF793 /* SwiftyJSON.swift in Sources */,
+				1614233200F77EEC7A5AEEB73F97FD04 /* M13Checkbox+IB.swift in Sources */,
+				2161CB44569782E42E45439692FBE3ED /* M13Checkbox-dummy.m in Sources */,
+				8002901EEAC6026FB9EA6777BC8B1C0D /* M13Checkbox.swift in Sources */,
+				7A6D04E6391AB243F35BAE217FF6F81D /* M13CheckboxAnimationPresets.swift in Sources */,
+				89746AFED1601736D8E1F149AABD1A40 /* M13CheckboxBounceManager.swift in Sources */,
+				F44047DF453E3DCEE6C2D09BC695AB39 /* M13CheckboxDotManager.swift in Sources */,
+				305133BCAA8380E5E6E9AF4FE3AEB087 /* M13CheckboxDotPathPresets.swift in Sources */,
+				84E341BC8535DD01582617F2C0DA35BD /* M13CheckboxExpandManager.swift in Sources */,
+				BC3B9E7AFBEDC160E284B9DE85BBC0FF /* M13CheckboxFadeManager.swift in Sources */,
+				096EFF0F52924F21FDCB53AB634268BB /* M13CheckboxFillManager.swift in Sources */,
+				F31B4CB5FED9CA97A27BD9EA00E2AFB7 /* M13CheckboxFlatManager.swift in Sources */,
+				036F34CEEB075B4967E66B39F30F0770 /* M13CheckboxGestureRecognizer.swift in Sources */,
+				3391A826E404FE0E7CE9C7691AD35D85 /* M13CheckboxManager.swift in Sources */,
+				4E99830DDC4A9A73AFEFBAC6A631CFF9 /* M13CheckboxPathPresets.swift in Sources */,
+				2D39AFF4DCB31D402488B07909551F55 /* M13CheckboxSpiralManager.swift in Sources */,
+				928EBAF19E6D4739410ACCC4DE0249F5 /* M13CheckboxSpiralPathPresets.swift in Sources */,
+				CD7C552ACD6156D56AE4BE1F228CD688 /* M13CheckboxStrokeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50A4AC263B91DA883789A26A12A3FDCD /* Sources */ = {
+		5DB63CA8A05A035F3075979DDB05A783 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FDBFB13267A6E7D3D24F25F20F308F /* Pods-AppWeather-dummy.m in Sources */,
+				8403A58D296705E8E81311582C701D90 /* Pods-AppWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642D9A293FB64D4D4428B90316BC3F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF632F8DA0A3973771A500A16334652 /* SwiftyJSON-dummy.m in Sources */,
+				E58F9469D865CC77B3E8154614162451 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0CFCD80C549D98B30E25EC6C208FE52 /* PBXTargetDependency */ = {
+		89C82DBC5094BCA7C16F109F91590F5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = B32A01698D950537D76A8DF322C5908D /* SwiftyJSON */;
-			targetProxy = 72CC0FEA50C7D630500394272C4A9C0E /* PBXContainerItemProxy */;
+			target = E018CE2B5E865B0467DE7E43EF3D8303 /* SwiftyJSON */;
+			targetProxy = 0307C2FA20A76CFBF534E4009FA8D454 /* PBXContainerItemProxy */;
+		};
+		90F568179CD5C20792B3B01C9CEE4D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = ED3AFC0E9905CA362D94DA496A23E2DD /* M13Checkbox */;
+			targetProxy = F6552057AD9152C9F7F1B7C7C433EC85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BBB10FFDBBE1A549852DFCA4E046974 /* Release */ = {
+		42270CB2870FEB0F213C065A90D294DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = B2A2390207E803AF63E2ECF60B61BED7 /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DFAB005B5AC0EB277D88C2059A31654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A2390207E803AF63E2ECF60B61BED7 /* M13Checkbox.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7860FD25DE701771B85411A9E32C16AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46E155BA17B5C187769604924678008 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -296,41 +517,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2B5B1E4FD7477909CF12CDA5F260FAB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EF40DE2DA2F8226E1C55E25DCB0D3A4 /* Pods-AppWeather.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AppWeather/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppWeather/Pods-AppWeather.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AppWeather;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -339,39 +527,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3E26FA3615E7C8B634714FC9F83372DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E1DDEBDF95D5F8A610984892BAEEF7 /* Pods-AppWeather.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AppWeather/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppWeather/Pods-AppWeather.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AppWeather;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		84FD87D359382A37B07149A12641B965 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -415,13 +570,46 @@
 			};
 			name = Debug;
 		};
-		E2E7C8A8F9C02CE866ACE06DA2503315 /* Debug */ = {
+		881DD924418401EBDBE0CFD1813F0344 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 00E1DDEBDF95D5F8A610984892BAEEF7 /* Pods-AppWeather.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppWeather/Pods-AppWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppWeather;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3B12D4A38E321B3E976AE8EDE5B34BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46E155BA17B5C187769604924678008 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -434,8 +622,41 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF57969E93EAF05AD0F125E90B46D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF40DE2DA2F8226E1C55E25DCB0D3A4 /* Pods-AppWeather.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppWeather/Pods-AppWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppWeather;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -486,15 +707,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		186FD676C5CD61E568AE766B5B33530C /* Build configuration list for PBXNativeTarget "Pods-AppWeather" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B5B1E4FD7477909CF12CDA5F260FAB1 /* Debug */,
-				3E26FA3615E7C8B634714FC9F83372DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -504,11 +716,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66C2BC3422F2EBAA012038E4D16DB870 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		32D89399F495EA2A53CEA20C06221712 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2E7C8A8F9C02CE866ACE06DA2503315 /* Debug */,
-				0BBB10FFDBBE1A549852DFCA4E046974 /* Release */,
+				7860FD25DE701771B85411A9E32C16AC /* Debug */,
+				B3B12D4A38E321B3E976AE8EDE5B34BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		397960DC62DDB25DFBB9F93D6BDC543E /* Build configuration list for PBXNativeTarget "Pods-AppWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF57969E93EAF05AD0F125E90B46D1BA /* Debug */,
+				881DD924418401EBDBE0CFD1813F0344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDB7EEF73FAC4784FB37CAC86AD636EC /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42270CB2870FEB0F213C065A90D294DC /* Debug */,
+				4DFAB005B5AC0EB277D88C2059A31654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
