@@ -11,6 +11,9 @@
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
 		A57AD6411CFF0B9D009DDFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57AD63F1CFF0B9D009DDFE4 /* Main.storyboard */; };
 		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
+		E90B16911D030E3C00F4F905 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16901D030E3C00F4F905 /* Weather.swift */; };
+		E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16921D030EFF00F4F905 /* UrlBuilder.swift */; };
+		E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16941D03111F00F4F905 /* WeatherService.swift */; };
 		E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */; };
 		E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F11D02EED300F10EBC /* ModelController.swift */; };
 		E9E2C3F81D02EED300F10EBC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F41D02EED300F10EBC /* DataViewController.swift */; };
@@ -26,6 +29,9 @@
 		A57AD6401CFF0B9D009DDFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90B16901D030E3C00F4F905 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		E90B16921D030EFF00F4F905 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		E90B16941D03111F00F4F905 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E2C3F11D02EED300F10EBC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		E9E2C3F41D02EED300F10EBC /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E2C3F11D02EED300F10EBC /* ModelController.swift */,
+				E90B16901D030E3C00F4F905 /* Weather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 		E9E2C3F21D02EED300F10EBC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E90B16921D030EFF00F4F905 /* UrlBuilder.swift */,
+				E90B16941D03111F00F4F905 /* WeatherService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -251,7 +260,10 @@
 				E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */,
 				E9E2C3F81D02EED300F10EBC /* DataViewController.swift in Sources */,
 				E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */,
+				E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */,
 				E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */,
+				E90B16911D030E3C00F4F905 /* Weather.swift in Sources */,
+				E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
