@@ -9,10 +9,16 @@
 import UIKit
 
 class RootViewController: UIViewController {
-    
+
+    // MARK: Properties
+    @IBOutlet weak var nameCity: UILabel!
+    var recevedCity: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        nameCity.text = recevedCity
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,7 +29,6 @@ class RootViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
-
-
+    
 }
 
