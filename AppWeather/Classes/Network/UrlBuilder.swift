@@ -17,7 +17,7 @@ class UrlBuilder {
         
         let cityEscaped = city.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
         
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=\(cityEscaped)&appid=\(apiKey)"
+        let url = "http://api.openweathermap.org/data/2.5/weather?q=\(cityEscaped!)&appid=\(apiKey)"
         
         return url
         
@@ -28,7 +28,7 @@ class UrlBuilder {
         
         let cityEscaped = city.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
         
-        let url = "http://api.openweathermap.org/data/2.5/forecast?q=\(cityEscaped)&appid=\(apiKey)"
+        let url = "http://api.openweathermap.org/data/2.5/forecast?q=\(cityEscaped!)&appid=\(apiKey)"
         
         return url
         
