@@ -34,4 +34,22 @@ class UrlBuilder {
         
     }
     
+    // Return current weather URL for coord
+    static func getCurrentCoordWeather(lat: Double, lon: Double) -> String {
+        
+        let url = "http://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)"
+        
+        return url
+        
+    }
+    
+    // Return forecast weather URL for coord
+    static func getForecastCoordWeather(lat: Double, lon: Double) -> String {
+        
+        let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(lat)&lon=\(lon)&appid=\(apiKey)"
+        
+        return url
+        
+    }
+    
 }

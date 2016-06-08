@@ -19,13 +19,50 @@ class WeatherService {
     
     var delegate: WeatherServiceDelegate?
     
+    // MARK: - Get weather methods
+    
     // Return current weather data for a specific city
     func getWeather(city: String) {
         
         let url = NSURL(string: UrlBuilder.getCurrentCityWeather(city))
+        
+        buildCurrentWeatherTask(url!)
+        
+    }
+    
+    // Return next day's weather data for a specific city
+    func getTomorrowWeather(city: String) {
+        
+        let url = NSURL(string: UrlBuilder.getForecastCityWeather(city))
+        
+        buildTomorrowWeatherTask(url!)
+        
+    }
+    
+    // Return current weather data for coords
+    func getWeatherCoord(lat: Double, lon: Double) {
+        
+        let url = NSURL(string: UrlBuilder.getCurrentCoordWeather(lat, lon: lon))
+        
+        buildCurrentWeatherTask(url!)
+        
+    }
+    
+    // Return next day's weather data for coords
+    func getTomorrowWeatherCoord(lat: Double, lon: Double) {
+        
+        let url = NSURL(string: UrlBuilder.getForecastCoordWeather(lat, lon: lon))
+        
+        buildTomorrowWeatherTask(url!)
+    }
+    
+    // MARK: - Private methods
+    
+    private func buildCurrentWeatherTask(url: NSURL) {
+        
         let session = NSURLSession.sharedSession()
         
-        let task = session.dataTaskWithURL(url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+        let task = session.dataTaskWithURL(url) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             
             let json = JSON(data: data!)
             
@@ -64,26 +101,23 @@ class WeatherService {
         
     }
     
-    // Return next day's weather data for a specific city
-    func getTomorrowWeather(city: String) {
+    private func buildTomorrowWeatherTask(url: NSURL) {
         
-        let url = NSURL(string: UrlBuilder.getForecastCityWeather(city))
         let session = NSURLSession.sharedSession()
         
-        let task = session.dataTaskWithURL(url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+        let task = session.dataTaskWithURL(url) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             
             let json = JSON(data: data!)
-            let tomorrow = json["list"][7]
             
             let name = json["name"].string
-            let description = tomorrow["weather"][0]["description"].string
-            let temp = tomorrow["main"]["temp"].double
-            let icon = tomorrow["weather"][0]["icon"].string
-            let windSpeed = tomorrow["wind"]["speed"].double
-            let humidity = tomorrow["main"]["humidity"].double
-            let sunrise = tomorrow["sys"]["sunrise"].double
-            let sunset = tomorrow["sys"]["sunset"].double
-            let pressure = tomorrow["main"]["pressure"].double
+            let description = json["weather"][0]["description"].string
+            let temp = json["main"]["temp"].double
+            let icon = json["weather"][0]["icon"].string
+            let windSpeed = json["wind"]["speed"].double
+            let humidity = json["main"]["humidity"].double
+            let sunrise = json["sys"]["sunrise"].double
+            let sunset = json["sys"]["sunset"].double
+            let pressure = json["main"]["pressure"].double
             
             let weather = Weather(
                 cityName: name!,
@@ -103,10 +137,11 @@ class WeatherService {
                     
                 })
             }
+            
         }
         
         task.resume()
-        
     }
+    
     
 }
