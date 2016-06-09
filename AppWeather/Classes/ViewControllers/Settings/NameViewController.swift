@@ -13,6 +13,8 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     @IBOutlet weak var nameUserTextField: UITextField!
+    var user = NSUserDefaults()
+    var checkName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,24 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         if nameUserTextField != nil {
             nameUserTextField.delegate = self
         }
+        
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let checkName = user.objectForKey("name_default")
+        if (checkName != nil) {
+            print("check\(checkName)")
+            
+            let a = UIStoryboard(name: "Main", bundle: nil)
+            let b = a.instantiateViewControllerWithIdentifier("MYNAV") as? UINavigationController
+            
+            self.presentViewController(b!, animated: true, completion: {
+                
+            })
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

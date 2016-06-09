@@ -7,7 +7,10 @@ target 'AppWeather' do
 
   # Pods for AppWeather
   pod 'SwiftyJSON', '~> 2.3'
-  #pod 'M13Checkbox'
   pod 'BEMCheckBox'
+  pod 'SEPageViewWithNavigationBar'
+
+  
+
 
 end
