@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		704680E2096AE22B17526895 /* Pods_AppWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924877EDEE7DB5BB116D3811 /* Pods_AppWeather.framework */; };
+		81BC3A321D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BC3A311D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift */; };
 		A502A1451D05783600BCC0E2 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1441D05783600BCC0E2 /* NameViewController.swift */; };
 		A502A1471D057C3B00BCC0E2 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1461D057C3B00BCC0E2 /* GenderViewController.swift */; };
 		A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1481D05A70D00BCC0E2 /* CityViewController.swift */; };
@@ -15,7 +16,6 @@
 		A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524CC181D08CA9A00093B10 /* ViewController.swift */; };
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
 		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
-		A5D7DDDE1D0998D200DCB11B /* UIColor+HLLAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7DDDD1D0998D200DCB11B /* UIColor+HLLAdditions.swift */; };
 		E90B16911D030E3C00F4F905 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16901D030E3C00F4F905 /* Weather.swift */; };
 		E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16921D030EFF00F4F905 /* UrlBuilder.swift */; };
 		E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16941D03111F00F4F905 /* WeatherService.swift */; };
@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		7FEB38CDACBAF44CE4352BA5 /* Pods-AppWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppWeather/Pods-AppWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		81BC3A311D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HLLAdditions.swift.swift"; sourceTree = "<group>"; };
 		9022C336AA7765841E375F98 /* Pods-AppWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppWeather/Pods-AppWeather.release.xcconfig"; sourceTree = "<group>"; };
 		924877EDEE7DB5BB116D3811 /* Pods_AppWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A502A1441D05783600BCC0E2 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameViewController.swift; path = Settings/NameViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		A57AD6341CFF0B9D009DDFE4 /* AppWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5D7DDDD1D0998D200DCB11B /* UIColor+HLLAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+HLLAdditions.swift"; path = "../../../../../../../../Downloads/UIColor+HLLAdditions.swift"; sourceTree = "<group>"; };
 		E90B16901D030E3C00F4F905 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E90B16921D030EFF00F4F905 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		E90B16941D03111F00F4F905 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -60,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81BC3A301D09A55E004E65A5 /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				81BC3A311D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
 		83BF24CD9B53B6F4C672AF24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +116,6 @@
 			path = AppWeather;
 			sourceTree = "<group>";
 		};
-		A5D7DDDF1D099FD300DCB11B /* StyleGuide */ = {
-			isa = PBXGroup;
-			children = (
-				A5D7DDDD1D0998D200DCB11B /* UIColor+HLLAdditions.swift */,
-			);
-			name = StyleGuide;
-			sourceTree = "<group>";
-		};
 		E9E2C3EE1D02EED300F10EBC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				A502A1431D0577E500BCC0E2 /* Settings */,
-				A5D7DDDF1D099FD300DCB11B /* StyleGuide */,
 				E9E2C3F51D02EED300F10EBC /* RootViewController.swift */,
+				81BC3A301D09A55E004E65A5 /* StyleGuide */,
 				A524CC181D08CA9A00093B10 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -294,9 +294,9 @@
 				E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */,
 				E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */,
 				A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */,
+				81BC3A321D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift in Sources */,
 				E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */,
 				A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */,
-				A5D7DDDE1D0998D200DCB11B /* UIColor+HLLAdditions.swift in Sources */,
 				E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */,
 				E90B16911D030E3C00F4F905 /* Weather.swift in Sources */,
 				E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */,
