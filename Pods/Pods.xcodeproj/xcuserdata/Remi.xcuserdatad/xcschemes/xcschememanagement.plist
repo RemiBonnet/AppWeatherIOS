@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SEPageViewWithNavigationBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0E840512953353DF4E81A581B44410FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>566D684A68E09758048DBF71B5F34369</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C28E2755C4058B0C997EDDC10BF0B7C</key>
+		<key>9E62B9DC00ABE3BA438F8A0A3D09DD32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B95EEEDEF211B1D43F3B87F51262C91E</key>
+		<key>F2A4E18B6855B92F4792647CE627950B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

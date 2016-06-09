@@ -11,21 +11,30 @@ import UIKit
 class RootViewController: UIViewController {
     
     // MARK: Properties
-    @IBOutlet weak var nameCity: UILabel!
-    
-    var receivedCity: String = ""
+    var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedGender: String = ""
+    var receivedCity: String = ""
+    
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        nameCity.text = receivedCity
-        print("RootView -> Name city:\(receivedCity)")
-        print("RootView -> Gender:\(receivedGender)")
+        let receivedName = user.objectForKey("name_default")  as! String
+        let receivedGender = user.objectForKey("gender_default")
+        let receivedCity = user.objectForKey("city_default")
+        
+        
+        
         print("RootView -> Name:\(receivedName)")
-
+        print("RootView -> Gender:\(receivedGender)")
+        print("RootView -> City:\(receivedCity)")
+        
+        nameLabel.text = receivedName
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,6 +44,7 @@ class RootViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+
     }
     
     

@@ -12,16 +12,15 @@
 		A502A1471D057C3B00BCC0E2 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1461D057C3B00BCC0E2 /* GenderViewController.swift */; };
 		A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1481D05A70D00BCC0E2 /* CityViewController.swift */; };
 		A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A502A14A1D05D74900BCC0E2 /* Main.storyboard */; };
+		A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524CC181D08CA9A00093B10 /* ViewController.swift */; };
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
 		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
-		A5C983971D03891A0038A5FF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C983961D03891A0038A5FF /* SettingsViewController.swift */; };
 		E90B16911D030E3C00F4F905 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16901D030E3C00F4F905 /* Weather.swift */; };
 		E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16921D030EFF00F4F905 /* UrlBuilder.swift */; };
 		E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16941D03111F00F4F905 /* WeatherService.swift */; };
 		E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE0DBD1D062101009DFD59 /* LocationService.swift */; };
 		E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */; };
 		E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F11D02EED300F10EBC /* ModelController.swift */; };
-		E9E2C3F81D02EED300F10EBC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F41D02EED300F10EBC /* DataViewController.swift */; };
 		E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F51D02EED300F10EBC /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,18 +32,17 @@
 		A502A1461D057C3B00BCC0E2 /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenderViewController.swift; path = Settings/GenderViewController.swift; sourceTree = "<group>"; };
 		A502A1481D05A70D00BCC0E2 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityViewController.swift; path = Settings/CityViewController.swift; sourceTree = "<group>"; };
 		A502A14B1D05D74900BCC0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A524CC181D08CA9A00093B10 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A52B91701D03089700D26A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57AD6341CFF0B9D009DDFE4 /* AppWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5C983961D03891A0038A5FF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E90B16901D030E3C00F4F905 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E90B16921D030EFF00F4F905 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		E90B16941D03111F00F4F905 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E9CE0DBD1D062101009DFD59 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E2C3F11D02EED300F10EBC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		E9E2C3F41D02EED300F10EBC /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		E9E2C3F51D02EED300F10EBC /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,9 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				A502A1431D0577E500BCC0E2 /* Settings */,
-				A5C983961D03891A0038A5FF /* SettingsViewController.swift */,
-				E9E2C3F41D02EED300F10EBC /* DataViewController.swift */,
 				E9E2C3F51D02EED300F10EBC /* RootViewController.swift */,
+				A524CC181D08CA9A00093B10 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -283,15 +280,14 @@
 				E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */,
 				A502A1471D057C3B00BCC0E2 /* GenderViewController.swift in Sources */,
 				A502A1451D05783600BCC0E2 /* NameViewController.swift in Sources */,
-				E9E2C3F81D02EED300F10EBC /* DataViewController.swift in Sources */,
 				E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */,
 				E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */,
 				A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */,
 				E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */,
+				A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */,
 				E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */,
 				E90B16911D030E3C00F4F905 /* Weather.swift in Sources */,
 				E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */,
-				A5C983971D03891A0038A5FF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

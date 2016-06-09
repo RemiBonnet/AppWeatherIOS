@@ -53,6 +53,7 @@ class GenderViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "genderIdentifier") {
+            
             let cityViewController: CityViewController = segue.destinationViewController as! CityViewController
             
             cityViewController.receivedGender = gender
