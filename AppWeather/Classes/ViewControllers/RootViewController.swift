@@ -18,6 +18,7 @@ class RootViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,11 +27,25 @@ class RootViewController: UIViewController {
         let receivedGender = user.objectForKey("gender_default")
         let receivedCity = user.objectForKey("city_default")
         
-        
-        
         print("RootView -> Name:\(receivedName)")
         print("RootView -> Gender:\(receivedGender)")
         print("RootView -> City:\(receivedCity)")
+        
+        let gradientLayer = CAGradientLayer()
+        
+        self.view.backgroundColor = UIColor.hllTwilightBlueColor()
+        gradientLayer.frame = self.view.bounds
+        
+        let color2 = UIColor.hllDarkSkyBlueColor()
+        let color1 = UIColor.hllSkyBlueColor()
+        
+        gradientLayer.colors = [color1, color2]
+        gradientLayer.locations = [0.0, 1.0]
+        
+        gradientLayer.frame = self.view.bounds
+        
+        
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
         nameLabel.text = receivedName
         
