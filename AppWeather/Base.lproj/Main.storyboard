@@ -205,11 +205,16 @@
         <!--Navigation Controller-->
         <scene sceneID="Fid-9H-K5Z">
             <objects>
-                <navigationController storyboardIdentifier="MYNAV" id="Wje-10-e6V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MYNAV" navigationBarHidden="YES" id="Wje-10-e6V" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PpN-lW-hdU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6LH-AK-aM5">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="ffw-uR-Ac0" kind="relationship" relationship="rootViewController" id="bUD-81-NgG"/>
                     </connections>
