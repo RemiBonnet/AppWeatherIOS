@@ -3,7 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Brandon_med.otf">
+            <string>BrandonGrotesque-Medium</string>
+            <string>BrandonGrotesque-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Name View Controller-->
         <scene sceneID="FkU-kJ-DRx">
@@ -236,21 +243,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VIEW 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGv-sj-8Ry">
-                                <rect key="frame" x="20" y="91" width="73" height="38"/>
+                                <rect key="frame" x="20" y="149" width="73" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_settings_white_48pt" translatesAutoresizingMaskIntoConstraints="NO" id="ygv-dX-ZnX">
+                                <rect key="frame" x="555" y="28" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="J0a-u1-n4B"/>
+                                    <constraint firstAttribute="width" constant="25" id="Nn1-KS-2Be"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ6-iN-KwN">
+                                <rect key="frame" x="20" y="30" width="560" height="21"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Medium" family="Brandon Grotesque" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAG-M2-W7z">
-                                <rect key="frame" x="20" y="150" width="182" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAG-M2-W7z">
+                                <rect key="frame" x="20" y="80" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Medium" family="Brandon Grotesque" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAG-M2-W7z" firstAttribute="leading" secondItem="VvJ-Id-K4r" secondAttribute="leadingMargin" id="7A6-hf-0B2"/>
+                            <constraint firstItem="OQ6-iN-KwN" firstAttribute="top" secondItem="GqF-Kc-fKH" secondAttribute="bottom" constant="10" id="DFX-cp-TQ9"/>
+                            <constraint firstItem="ygv-dX-ZnX" firstAttribute="top" secondItem="GqF-Kc-fKH" secondAttribute="bottom" constant="8" id="G3z-mu-OYM"/>
+                            <constraint firstItem="NAG-M2-W7z" firstAttribute="top" secondItem="ygv-dX-ZnX" secondAttribute="bottom" constant="27" id="GfS-IQ-1d8"/>
+                            <constraint firstItem="OQ6-iN-KwN" firstAttribute="leading" secondItem="VvJ-Id-K4r" secondAttribute="leadingMargin" id="bLc-sa-21p"/>
+                            <constraint firstItem="ygv-dX-ZnX" firstAttribute="trailing" secondItem="VvJ-Id-K4r" secondAttribute="trailingMargin" id="fbJ-3U-fV4"/>
+                            <constraint firstItem="OQ6-iN-KwN" firstAttribute="trailing" secondItem="VvJ-Id-K4r" secondAttribute="trailingMargin" id="hwT-7r-EI3"/>
+                            <constraint firstItem="NAG-M2-W7z" firstAttribute="trailing" secondItem="VvJ-Id-K4r" secondAttribute="trailingMargin" id="lPv-TC-ydr"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityLabel" destination="OQ6-iN-KwN" id="dBJ-y7-dLs"/>
                         <outlet property="nameLabel" destination="NAG-M2-W7z" id="081-rc-hdg"/>
                         <segue destination="WwS-Bb-45w" kind="custom" identifier="SEPage" customClass="SEPageViewSegue" customModule="SEPageViewWithNavigationBar" id="BX1-Z8-KZ5"/>
                     </connections>
@@ -278,7 +309,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fk-ui-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,5 +350,8 @@
             <point key="canvasLocation" x="667" y="-274"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_settings_white_48pt" width="48" height="48"/>
+    </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

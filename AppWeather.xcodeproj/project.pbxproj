@@ -16,6 +16,10 @@
 		A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524CC181D08CA9A00093B10 /* ViewController.swift */; };
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
 		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
+		A5D7DE0F1D09CBA000DCB11B /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0B1D09CBA000DCB11B /* Brandon_bld.otf */; };
+		A5D7DE101D09CBA000DCB11B /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */; };
+		A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */; };
+		A5D7DE121D09CBA000DCB11B /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0E1D09CBA000DCB11B /* Brandon_med.otf */; };
 		E90B16911D030E3C00F4F905 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16901D030E3C00F4F905 /* Weather.swift */; };
 		E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16921D030EFF00F4F905 /* UrlBuilder.swift */; };
 		E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16941D03111F00F4F905 /* WeatherService.swift */; };
@@ -39,6 +43,10 @@
 		A57AD6341CFF0B9D009DDFE4 /* AppWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D7DE0B1D09CBA000DCB11B /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		A5D7DE0E1D09CBA000DCB11B /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
 		E90B16901D030E3C00F4F905 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E90B16921D030EFF00F4F905 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		E90B16941D03111F00F4F905 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 		81BC3A301D09A55E004E65A5 /* StyleGuide */ = {
 			isa = PBXGroup;
 			children = (
+				A5D7DE0B1D09CBA000DCB11B /* Brandon_bld.otf */,
+				A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */,
+				A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */,
+				A5D7DE0E1D09CBA000DCB11B /* Brandon_med.otf */,
 				81BC3A311D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift */,
 			);
 			path = StyleGuide;
@@ -150,9 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				A502A1431D0577E500BCC0E2 /* Settings */,
-				E9E2C3F51D02EED300F10EBC /* RootViewController.swift */,
 				81BC3A301D09A55E004E65A5 /* StyleGuide */,
 				A524CC181D08CA9A00093B10 /* ViewController.swift */,
+				E9E2C3F51D02EED300F10EBC /* RootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -227,9 +239,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D7DE101D09CBA000DCB11B /* Brandon_blk.otf in Resources */,
+				A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */,
 				A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */,
 				A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */,
 				A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */,
+				A5D7DE121D09CBA000DCB11B /* Brandon_med.otf in Resources */,
+				A5D7DE0F1D09CBA000DCB11B /* Brandon_bld.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

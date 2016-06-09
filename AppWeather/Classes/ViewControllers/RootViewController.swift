@@ -17,15 +17,15 @@ class RootViewController: UIViewController {
     var receivedCity: String = ""
     
     @IBOutlet weak var nameLabel: UILabel!
-    
+    @IBOutlet weak var cityLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let receivedName = user.objectForKey("name_default")  as! String
-        let receivedGender = user.objectForKey("gender_default")
-        let receivedCity = user.objectForKey("city_default")
+        let receivedGender = user.objectForKey("gender_default") 
+        let receivedCity = user.objectForKey("city_default") as! String
         
         print("RootView -> Name:\(receivedName)")
         print("RootView -> Gender:\(receivedGender)")
@@ -33,21 +33,25 @@ class RootViewController: UIViewController {
         
         let gradientLayer = CAGradientLayer()
         
-        self.view.backgroundColor = UIColor.hllTwilightBlueColor()
         gradientLayer.frame = self.view.bounds
         
-        let color2 = UIColor.hllDarkSkyBlueColor()
-        let color1 = UIColor.hllSkyBlueColor()
+        let color1 = UIColor.hllTwilightBlueColor().CGColor as CGColorRef
+        let color2 = UIColor.hllLightTealColor().CGColor as CGColorRef
         
         gradientLayer.colors = [color1, color2]
-        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.locations = [0.1, 1.0]
         
         gradientLayer.frame = self.view.bounds
         
         
         self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
-        nameLabel.text = receivedName
+        cityLabel.text = receivedCity
+        nameLabel.text = "HELLO \(receivedName.uppercaseString),"
+        
+        nameLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 13)
+        cityLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
+
         
         
     }
