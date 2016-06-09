@@ -12,10 +12,13 @@ import UIKit
 class CityViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
+    
     @IBOutlet weak var cityUserTextField: UITextField!
     
+    var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedGender: String = ""
+    var receivedCity: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,9 @@ class CityViewController: UIViewController, UITextFieldDelegate {
         if cityUserTextField != nil {
             cityUserTextField.delegate = self
         }
+        
+        user.setObject(receivedName, forKey: "name_default")
+        user.setObject(receivedGender, forKey: "gender_default")
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,14 +46,8 @@ class CityViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "cityIdentifier") {
-            let rootViewController: RootViewController = segue.destinationViewController as! RootViewController
-            
-            rootViewController.receivedCity = cityUserTextField.text!
-            rootViewController.receivedGender = receivedGender
-            rootViewController.receivedName = receivedName
-        }
+    @IBAction func tappedCityAction(sender: AnyObject) {
+        receivedCity =  cityUserTextField.text!
+        user.setObject(receivedCity, forKey: "city_default")
     }
-    
 }
