@@ -48,6 +48,9 @@ class RootViewController: UIViewController {
         
         cityLabel.text = receivedCity
         nameLabel.text = "HELLO \(receivedName.uppercaseString),"
+        
+        nameLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 13)
+        cityLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
 
         
         

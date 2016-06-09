@@ -44,6 +44,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Brandon_med.otf</string>
+		<string>Brandon_blk.otf</string>
+		<string>Brandon_light.otf</string>
+		<string>Brandon_bld.otf</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app wants to use your location</string>
