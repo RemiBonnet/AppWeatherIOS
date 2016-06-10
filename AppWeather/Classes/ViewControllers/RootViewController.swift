@@ -8,9 +8,11 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController, WeatherServiceDelegate {
     
     // MARK: Properties
+    let weatherService = WeatherService()
+    
     var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedGender: String = ""
@@ -18,10 +20,16 @@ class RootViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var iconWeather: UIImageView!
+    @IBOutlet weak var dayLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.weatherService.delegate = self
         
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedGender = user.objectForKey("gender_default") 
@@ -34,7 +42,7 @@ class RootViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         
         gradientLayer.frame = self.view.bounds
-        
+
         let color1 = UIColor.hllTwilightBlueColor().CGColor as CGColorRef
         let color2 = UIColor.hllLightTealColor().CGColor as CGColorRef
         
@@ -46,14 +54,31 @@ class RootViewController: UIViewController {
         
         self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
-        cityLabel.text = receivedCity
+        self.weatherService.getWeather(receivedCity)
+        cityLabel.text = receivedCity.capitalizedString
+        
         nameLabel.text = "HELLO \(receivedName.uppercaseString),"
+        nameLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         
-        nameLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 13)
-        cityLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
-
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeStyle = .MediumStyle
+        dateFormatter.dateFormat = "EEEE"
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US")
+    
+        dayLabel.text = "\(dateFormatter.stringFromDate(NSDate()).capitalizedString)"
+        dayLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 22)
         
-        
+    }
+    
+    func setWeather(weather: Weather) {
+        // Description
+        descriptionLabel.text = weather.description.capitalizedString
+        descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
+        // Temperature
+        tempLabel.text = "\(Int(weather.temp - 273.5))°"
+        tempLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
+        // Icon
+        iconWeather.image = UIImage(named: weather.icon)
     }
     
     override func didReceiveMemoryWarning() {
