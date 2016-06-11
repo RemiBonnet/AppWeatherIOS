@@ -31,14 +31,12 @@ class RootViewController: UIViewController, WeatherServiceDelegate {
         
         self.weatherService.delegate = self
         
+        // Data user
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedGender = user.objectForKey("gender_default") 
         let receivedCity = user.objectForKey("city_default") as! String
         
-        print("RootView -> Name:\(receivedName)")
-        print("RootView -> Gender:\(receivedGender)")
-        print("RootView -> City:\(receivedCity)")
-        
+        // Background gradient
         let gradientLayer = CAGradientLayer()
         
         gradientLayer.frame = self.view.bounds
