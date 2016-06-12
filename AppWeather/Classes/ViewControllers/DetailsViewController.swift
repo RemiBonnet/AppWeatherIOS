@@ -58,7 +58,6 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         // Formatter Date for Sunrise and Sunset
         let formatter = NSDateFormatter()
         formatter.dateFormat = "HH:mm"
-        formatter.timeZone = NSTimeZone(abbreviation: "UTC")
         
         // Sunrise
         let sunrise = weather.sunrise
