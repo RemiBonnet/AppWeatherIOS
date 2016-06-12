@@ -6,6 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Brandon_bld.otf">
+            <string>BrandonGrotesque-Bold</string>
+            <string>BrandonGrotesque-Bold</string>
+        </mutableArray>
         <mutableArray key="Brandon_med.otf">
             <string>BrandonGrotesque-Medium</string>
             <string>BrandonGrotesque-Medium</string>
@@ -565,42 +569,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sun_background" translatesAutoresizingMaskIntoConstraints="NO" id="SSY-1H-aKp">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun_background" translatesAutoresizingMaskIntoConstraints="NO" id="SSY-1H-aKp">
+                                <rect key="frame" x="0.0" y="0.0" width="1125" height="600"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="4" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-Wl-yXj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="4" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-Wl-yXj">
                                 <rect key="frame" x="32" y="134" width="537" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="4np-Fm-AzC" customClass="DetailsCell" customModule="AppWeather" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="cell" rowHeight="70" id="4np-Fm-AzC" customClass="DetailsCell" customModule="AppWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="537" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="4np-Fm-AzC" id="gaD-Hh-WHN">
-                                            <rect key="frame" x="0.0" y="0.0" width="537" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="537" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGc-MZ-2by">
-                                                    <rect key="frame" x="18" y="11" width="45" height="47"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="18" y="11" width="43.5" height="47"/>
+                                                    <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reS-AO-l2d">
-                                                    <rect key="frame" x="484" y="14" width="36" height="44"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="485" y="14" width="35" height="44"/>
+                                                    <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="18"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-WM-Ev2">
+                                                    <rect key="frame" x="0.0" y="66" width="537" height="1"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Dz8-Ds-KkE"/>
+                                                        <constraint firstAttribute="width" constant="537" id="Mxg-sE-ZQu"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="A7I-WM-Ev2" firstAttribute="top" secondItem="HGc-MZ-2by" secondAttribute="bottom" constant="8" symbolic="YES" id="1LG-c0-mI5"/>
                                                 <constraint firstItem="HGc-MZ-2by" firstAttribute="top" secondItem="gaD-Hh-WHN" secondAttribute="topMargin" constant="3" id="4Z9-FI-S4n"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="HGc-MZ-2by" secondAttribute="bottom" constant="3.5" id="GfH-wr-a6k"/>
                                                 <constraint firstItem="reS-AO-l2d" firstAttribute="top" secondItem="gaD-Hh-WHN" secondAttribute="topMargin" constant="6" id="Vgg-g0-Kqg"/>
                                                 <constraint firstItem="reS-AO-l2d" firstAttribute="trailing" secondItem="gaD-Hh-WHN" secondAttribute="trailingMargin" constant="-9" id="dck-hH-V9i"/>
                                                 <constraint firstItem="HGc-MZ-2by" firstAttribute="leading" secondItem="gaD-Hh-WHN" secondAttribute="leadingMargin" constant="10" id="iBg-Xg-oK3"/>
+                                                <constraint firstItem="A7I-WM-Ev2" firstAttribute="leading" secondItem="gaD-Hh-WHN" secondAttribute="leading" id="r4q-gu-Fef"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="reS-AO-l2d" secondAttribute="bottom" constant="3.5" id="ygQ-e8-hfX"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -870,7 +883,7 @@
         <image name="sun_background" width="1125" height="2001"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jca-gb-P2l"/>
+        <segue reference="5j0-rw-jYy"/>
         <segue reference="1ci-zs-c0M"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

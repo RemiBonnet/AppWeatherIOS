@@ -20,7 +20,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var sunrise: Double = 0.0
     var namesData = ["SUNRISE","SUNSET","HUMIDITY","WIND SPEED"]
-    var data = ["dede","dsds","dsd","dsds"]
+    var data = ["SUNRISE","SUNSET","HUMIDITY","WIND SPEED"]
     
     var user = NSUserDefaults()
     var receivedCity: String = ""
@@ -33,11 +33,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let receivedCity = user.objectForKey("city_default") as! String
         
-        print("DetailView -> City:\(receivedCity)")
         self.weatherService.getWeather(receivedCity)
-        
-        print("data\(sunrise)")
-        
         
         // Date
         let dateFormatter = NSDateFormatter()
@@ -48,25 +44,43 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         dateLabel.text = "\(dateFormatter.stringFromDate(NSDate()).uppercaseString)"
         dateLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 16)
         
-        
     }
     
     func setWeather(weather: Weather) {
         // Temp
         tempLabel.text = "\(Int(weather.temp - 273.5))°"
         tempLabel.font = UIFont(name: "BrandonGrotesque-Light", size: 75)
+        
         // Description
         descriptionLabel.text = weather.description.capitalizedString
         descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 22)
         
+        // Formatter Date for Sunrise and Sunset
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = NSTimeZone(abbreviation: "UTC")
+        
         // Sunrise
-        sunrise = weather.sunrise
-                
-//        // Sunset
-//        let sunset = weather.sunset
-//        // Humidity
-//        let humidity = weather.humidity
-//        // Wind Speed
+        let sunrise = weather.sunrise
+        let dateSunrise = NSDate(timeIntervalSince1970: sunrise)
+        let utcTimeSunrise = formatter.stringFromDate(dateSunrise)
+        data[0] = "\(String(utcTimeSunrise))"
+        
+        // Sunset
+        let sunset = weather.sunset
+        let dateSunset = NSDate(timeIntervalSince1970: sunset)
+        let utcTimeSunset = formatter.stringFromDate(dateSunset)
+        data[1] = "\(String(utcTimeSunset))"
+        
+        // Humidity
+        let humidity = String(weather.humidity)
+        data[2] = "\(humidity)%"
+        
+        // Wind Speed
+        let wind = String(weather.windSpeed)
+        data[3] = "\(wind) m/s"
+        
+        tableView.reloadData()
     }
     
     
@@ -77,7 +91,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
