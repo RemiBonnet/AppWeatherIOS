@@ -61,14 +61,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         }
         
         // Gender
-//        genderTextField.text = "\(receivedGender.uppercaseString)"
-//        genderTextField.font = UIFont(name: "BrandonGrotesque-Bold", size: 18)
-        if (receivedGender == "man") {
-//            genderController.addTarget(self, action: Selector("segmentedValueChanged:"), forControlEvents:.TouchUpInside)
-            self.view.addSubview(genderController)
-        } else {
-            genderController.selectedSegmentIndex == 1
-        }
         genderLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 18)
 
         
@@ -107,9 +99,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             receivedGender = "woman"
             user.setObject(receivedGender, forKey: "gender_default")
         }
-        print(receivedGender)
-        
-        
         
     }
     

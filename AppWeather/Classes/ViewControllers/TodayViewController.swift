@@ -8,14 +8,13 @@
 
 import UIKit
 
-class RootViewController: UIViewController, WeatherServiceDelegate {
+class TodayViewController: UIViewController, WeatherServiceDelegate {
     
     // MARK: Properties
     let weatherService = WeatherService()
     
     var user = NSUserDefaults()
     var receivedName: String = ""
-    var receivedGender: String = ""
     var receivedCity: String = ""
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -33,31 +32,19 @@ class RootViewController: UIViewController, WeatherServiceDelegate {
         
         // Data user
         let receivedName = user.objectForKey("name_default")  as! String
-        let receivedGender = user.objectForKey("gender_default") 
         let receivedCity = user.objectForKey("city_default") as! String
         
-        // Background gradient
-        let gradientLayer = CAGradientLayer()
-        
-        gradientLayer.frame = self.view.bounds
-
-        let color1 = UIColor.hllTwilightBlueColor().CGColor as CGColorRef
-        let color2 = UIColor.hllLightTealColor().CGColor as CGColorRef
-        
-        gradientLayer.colors = [color1, color2]
-        gradientLayer.locations = [0.1, 1.0]
-        
-        gradientLayer.frame = self.view.bounds
-        
-        
-        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
-        
+        // Get weather
         self.weatherService.getWeather(receivedCity)
+        
+        // City
         cityLabel.text = receivedCity.capitalizedString
         
+        // Name
         nameLabel.text = "HELLO \(receivedName.uppercaseString),"
         nameLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         
+        // Date
         let dateFormatter = NSDateFormatter()
         dateFormatter.timeStyle = .MediumStyle
         dateFormatter.dateFormat = "EEEE"

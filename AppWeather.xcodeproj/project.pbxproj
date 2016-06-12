@@ -14,6 +14,7 @@
 		A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502A1481D05A70D00BCC0E2 /* CityViewController.swift */; };
 		A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A502A14A1D05D74900BCC0E2 /* Main.storyboard */; };
 		A50E9D8D1D0C30F800C1A361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */; };
+		A50E9D8F1D0D7F7600C1A361 /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E9D8E1D0D7F7600C1A361 /* TomorrowViewController.swift */; };
 		A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524CC181D08CA9A00093B10 /* ViewController.swift */; };
 		A5270F421D0B6DAD00C7041A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */; };
 		A5270F451D0B8CB000C7041A /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F441D0B8CB000C7041A /* DetailsCell.swift */; };
@@ -29,7 +30,7 @@
 		E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE0DBD1D062101009DFD59 /* LocationService.swift */; };
 		E9E2C3F61D02EED300F10EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */; };
 		E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F11D02EED300F10EBC /* ModelController.swift */; };
-		E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F51D02EED300F10EBC /* RootViewController.swift */; };
+		E9E2C3F91D02EED300F10EBC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2C3F51D02EED300F10EBC /* TodayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A502A1481D05A70D00BCC0E2 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityViewController.swift; path = Settings/CityViewController.swift; sourceTree = "<group>"; };
 		A502A14B1D05D74900BCC0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A50E9D8E1D0D7F7600C1A361 /* TomorrowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		A524CC181D08CA9A00093B10 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A5270F441D0B8CB000C7041A /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsCell.swift; path = Cell/DetailsCell.swift; sourceTree = "<group>"; };
@@ -59,7 +61,7 @@
 		E9CE0DBD1D062101009DFD59 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		E9E2C3EF1D02EED300F10EBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E2C3F11D02EED300F10EBC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		E9E2C3F51D02EED300F10EBC /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E9E2C3F51D02EED300F10EBC /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,9 +181,10 @@
 				A502A1431D0577E500BCC0E2 /* Settings */,
 				81BC3A301D09A55E004E65A5 /* StyleGuide */,
 				A524CC181D08CA9A00093B10 /* ViewController.swift */,
-				E9E2C3F51D02EED300F10EBC /* RootViewController.swift */,
+				E9E2C3F51D02EED300F10EBC /* TodayViewController.swift */,
 				A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */,
 				A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */,
+				A50E9D8E1D0D7F7600C1A361 /* TomorrowViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,7 +330,7 @@
 				A502A1451D05783600BCC0E2 /* NameViewController.swift in Sources */,
 				E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */,
 				A50E9D8D1D0C30F800C1A361 /* SettingsViewController.swift in Sources */,
-				E9E2C3F91D02EED300F10EBC /* RootViewController.swift in Sources */,
+				E9E2C3F91D02EED300F10EBC /* TodayViewController.swift in Sources */,
 				A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */,
 				81BC3A321D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift in Sources */,
 				E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */,
@@ -336,6 +339,7 @@
 				E90B16911D030E3C00F4F905 /* Weather.swift in Sources */,
 				A5270F421D0B6DAD00C7041A /* DetailsViewController.swift in Sources */,
 				E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */,
+				A50E9D8F1D0D7F7600C1A361 /* TomorrowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
