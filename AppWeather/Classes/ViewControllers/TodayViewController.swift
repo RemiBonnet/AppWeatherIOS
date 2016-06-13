@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TodayViewController: UIViewController, WeatherServiceDelegate {
+class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServiceDelegate {
     
     // MARK: Properties
     let weatherService = WeatherService()
+    let styleService = StyleService()
     
     var user = NSUserDefaults()
     var receivedName: String = ""
@@ -24,11 +25,17 @@ class TodayViewController: UIViewController, WeatherServiceDelegate {
     @IBOutlet weak var iconWeather: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
     
+    @IBOutlet weak var topStyle: UIImageView!
+    @IBOutlet weak var accessoryStyle: UIImageView!
+    @IBOutlet weak var botStyle: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.weatherService.delegate = self
+        self.styleService.delegate = self
         
         // Data user
         let receivedName = user.objectForKey("name_default")  as! String
@@ -64,6 +71,18 @@ class TodayViewController: UIViewController, WeatherServiceDelegate {
         tempLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         // Icon
         iconWeather.image = UIImage(named: weather.icon)
+        
+        // Get style
+        self.styleService.getStyle(weather.temp, icon: weather.icon)
+    }
+    
+    func setStyle(style: Style) {
+        // Top Style
+        topStyle.image = UIImage(named: style.mainClothe)
+        // Accessory
+        accessoryStyle.image = UIImage(named: style.firstAccessory)
+        // Bot Style
+        botStyle.image = UIImage(named: style.secondAccessory)
     }
     
     override func didReceiveMemoryWarning() {
