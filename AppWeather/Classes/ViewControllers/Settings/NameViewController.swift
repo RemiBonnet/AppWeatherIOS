@@ -45,6 +45,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLayoutSubviews() {
         let checkName = user.objectForKey("name_default")
+        
         if (checkName != nil) {
             print("check\(checkName)")
             
