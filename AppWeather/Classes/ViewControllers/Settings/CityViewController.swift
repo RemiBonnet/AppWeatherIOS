@@ -17,6 +17,7 @@ class CityViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var findLabel: UILabel!
     @IBOutlet weak var cityUserTextField: UITextField!
     @IBOutlet weak var geoButton: UIButton!
+    @IBOutlet weak var doneButton: UIButton!
     
     var user = NSUserDefaults()
     var receivedName: String = ""
@@ -52,7 +53,8 @@ class CityViewController: UIViewController, UITextFieldDelegate {
         cityUserTextField.font = UIFont(name: "BrandonGrotesque-Regular", size: 24)
         leastLabel.font = UIFont(name: "BrandonGrotesque-Black", size: 30)
         findLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 19)
-        geoButton.titleLabel!.font = UIFont(name: "BrandonGrotesque-Black", size: 15)
+        doneButton.titleLabel!.font = UIFont(name: "BrandonGrotesque-Medium", size: 15)
+        geoButton.titleLabel!.font = UIFont(name: "BrandonGrotesque-Black", size: 12)
         
         geoButton.layer.borderWidth = 1;
         geoButton.layer.borderColor = UIColor.whiteColor().CGColor
