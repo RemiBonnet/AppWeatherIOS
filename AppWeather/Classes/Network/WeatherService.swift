@@ -115,7 +115,7 @@ class WeatherService {
             let icon = json["list"][7]["weather"][0]["icon"].string
             
             let weather = Weather(cityName: name!, description: description!, temp: temp!, icon: icon!, windSpeed: 0, humidity: 0, sunrise: 0, sunset: 0, pressure: 0)
-            
+
             if self.delegate != nil {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.delegate?.setWeather(weather)
