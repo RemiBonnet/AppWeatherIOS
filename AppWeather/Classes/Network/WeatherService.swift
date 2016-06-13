@@ -109,27 +109,12 @@ class WeatherService {
             
             let json = JSON(data: data!)
             
-            let name = json["name"].string
-            let description = json["weather"][0]["description"].string
-            let temp = json["main"]["temp"].double
-            let icon = json["weather"][0]["icon"].string
-            let windSpeed = json["wind"]["speed"].double
-            let humidity = json["main"]["humidity"].double
-            let sunrise = json["sys"]["sunrise"].double
-            let sunset = json["sys"]["sunset"].double
-            let pressure = json["main"]["pressure"].double
+            let name = json["city"]["name"].string
+            let description = json["list"][7]["weather"][0]["description"].string
+            let temp = json["list"][7]["main"]["temp"].double
+            let icon = json["list"][7]["weather"][0]["icon"].string
             
-            let weather = Weather(
-                cityName: name!,
-                description: description!,
-                temp: temp!,
-                icon: icon!,
-                windSpeed: windSpeed!,
-                humidity: humidity!,
-                sunrise: sunrise!,
-                sunset: sunset!,
-                pressure: pressure!
-            )
+            let weather = Weather(cityName: name!, description: description!, temp: temp!, icon: icon!, windSpeed: 0, humidity: 0, sunrise: 0, sunset: 0, pressure: 0)
             
             if self.delegate != nil {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
