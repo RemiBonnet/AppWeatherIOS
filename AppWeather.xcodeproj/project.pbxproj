@@ -19,7 +19,6 @@
 		A5270F421D0B6DAD00C7041A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */; };
 		A5270F451D0B8CB000C7041A /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F441D0B8CB000C7041A /* DetailsCell.swift */; };
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
-		A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */; };
 		A5D7DE0F1D09CBA000DCB11B /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0B1D09CBA000DCB11B /* Brandon_bld.otf */; };
 		A5D7DE101D09CBA000DCB11B /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */; };
 		A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */; };
@@ -49,7 +48,6 @@
 		A5270F441D0B8CB000C7041A /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsCell.swift; path = Cell/DetailsCell.swift; sourceTree = "<group>"; };
 		A52B91701D03089700D26A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57AD6341CFF0B9D009DDFE4 /* AppWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57AD6471CFF0B9D009DDFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D7DE0B1D09CBA000DCB11B /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
 		A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				E9E2C3EE1D02EED300F10EBC /* Classes */,
 				A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */,
 				A502A14A1D05D74900BCC0E2 /* Main.storyboard */,
-				A57AD6421CFF0B9D009DDFE4 /* Assets.xcassets */,
 				A57AD6471CFF0B9D009DDFE4 /* Info.plist */,
 			);
 			path = AppWeather;
@@ -263,7 +260,6 @@
 				A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */,
 				A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */,
 				A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */,
-				A57AD6431CFF0B9D009DDFE4 /* Assets.xcassets in Resources */,
 				A5D7DE121D09CBA000DCB11B /* Brandon_med.otf in Resources */,
 				A5D7DE0F1D09CBA000DCB11B /* Brandon_bld.otf in Resources */,
 			);

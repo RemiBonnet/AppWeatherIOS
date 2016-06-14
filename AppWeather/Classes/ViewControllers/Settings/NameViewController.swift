@@ -12,6 +12,7 @@ import UIKit
 class NameViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
+    @IBOutlet weak var hello: UILabel!
     @IBOutlet weak var nameUserTextField: UITextField!
     var user = NSUserDefaults()
     var checkName: String = ""
@@ -32,13 +33,15 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         
         gradientLayer.frame = self.view.bounds
         
-        
         self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
         if nameUserTextField != nil {
             nameUserTextField.delegate = self
         }
         
+        nameUserTextField.font = UIFont(name: "BrandonGrotesque-Regular", size: 28)
+        
+        hello.font = UIFont(name: "BrandonGrotesque-Black", size: 30)
         
         
     }
@@ -49,11 +52,11 @@ class NameViewController: UIViewController, UITextFieldDelegate {
         if (checkName != nil) {
             print("check\(checkName)")
             
-            let a = UIStoryboard(name: "Main", bundle: nil)
-            let b = a.instantiateViewControllerWithIdentifier("MYNAV") as? UINavigationController
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let startStoryboard = mainStoryboard.instantiateViewControllerWithIdentifier("MYNAV") as? UINavigationController
+        
+            self.presentViewController(startStoryboard!, animated: true, completion: {
             
-            self.presentViewController(b!, animated: true, completion: {
-                
             })
         }
 

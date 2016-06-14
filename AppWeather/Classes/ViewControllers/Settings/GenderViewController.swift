@@ -16,6 +16,10 @@ class GenderViewController: UIViewController {
     @IBOutlet weak var nameTextLabel: UILabel!
     @IBOutlet weak var manCheckBox: BEMCheckBox!
     @IBOutlet weak var womanCheckBox: BEMCheckBox!
+    @IBOutlet weak var iceLabel: UILabel!
+    @IBOutlet weak var chick: UILabel!
+    @IBOutlet weak var dude: UILabel!
+
     
     var receivedName: String = ""
     var gender: String = ""
@@ -26,7 +30,26 @@ class GenderViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        nameTextLabel.text = receivedName.uppercaseString
+        let gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = self.view.bounds
+        
+        let color1 = UIColor.hllTwilightBlueColor().CGColor as CGColorRef
+        let color2 = UIColor.hllLightTealColor().CGColor as CGColorRef
+        
+        gradientLayer.colors = [color1, color2]
+        gradientLayer.locations = [0.1, 1.0]
+        
+        gradientLayer.frame = self.view.bounds
+        
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+        
+        nameTextLabel.text = "HELLO \(receivedName.uppercaseString)"
+        iceLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 19)
+        nameTextLabel.font = UIFont(name: "BrandonGrotesque-Black", size: 30)
+        chick.font = UIFont(name: "BrandonGrotesque-Black", size: 14)
+        dude.font = UIFont(name: "BrandonGrotesque-Black", size: 14)
+    
     }
     
     override func didReceiveMemoryWarning() {
