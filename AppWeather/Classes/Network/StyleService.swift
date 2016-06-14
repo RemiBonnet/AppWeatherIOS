@@ -29,31 +29,31 @@ class StyleService {
             switch (temp) {
             case let temp where temp < 0:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "rain_background")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "snow_background", description: "Let it go, let it go")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 0 && temp < 10:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "parapluie", secondAccessory: "echarpe", background: "rain_background")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "parapluie", secondAccessory: "echarpe", background: "rain_background", description: "Good time to be sick")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 10 && temp < 20:
                 
-                let style = Style(mainClothe: "cire", firstAccessory: "botte", secondAccessory: "echarpe", background: "rain_background")
+                let style = Style(mainClothe: "cire", firstAccessory: "botte", secondAccessory: "echarpe", background: "rain_background", description: "Hang in there")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 20 && temp < 30:
                 
-                let style = Style(mainClothe: "pullover", firstAccessory: "parapluie", secondAccessory: "basket", background: "rain_background")
+                let style = Style(mainClothe: "pullover", firstAccessory: "parapluie", secondAccessory: "basket", background: "rain_background", description: "No BBQ today")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 30:
                 
-                let style = Style(mainClothe: "slip", firstAccessory: "parapluie", secondAccessory: "lunettes", background: "rain_background")
+                let style = Style(mainClothe: "slip", firstAccessory: "parapluie", secondAccessory: "lunettes", background: "rain_background", description: "It's hot and wet outside like your...")
             
                 taskStyle(style)
                 
@@ -67,31 +67,31 @@ class StyleService {
             switch (temp) {
             case let temp where temp < 0:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "gant", background: "sun_background")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "gant", background: "sun_background", description: "Is it cold enough for you ?")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 0 && temp < 10:
                 
-                let style = Style(mainClothe: "pullover", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "sun_background")
+                let style = Style(mainClothe: "pullover", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "sun_background", description: "It could be worse")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 10 && temp < 20:
                 
-                let style = Style(mainClothe: "chemise", firstAccessory: "casquette", secondAccessory: "basket", background: "sun_background")
+                let style = Style(mainClothe: "chemise", firstAccessory: "casquette", secondAccessory: "basket", background: "sun_background", description: "“Take a sweater.“ Mom")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 20 && temp < 30:
                 
-                let style = Style(mainClothe: "debardeur", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background")
+                let style = Style(mainClothe: "debardeur", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background", description: "Now we're talking")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 30:
                 
-                let style = Style(mainClothe: "slip", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background")
+                let style = Style(mainClothe: "slip", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background", description: "Save your clothes for a rainy day")
             
                 taskStyle(style)
                 
