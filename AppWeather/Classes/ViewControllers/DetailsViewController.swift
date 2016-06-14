@@ -27,6 +27,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var user = NSUserDefaults()
     var receivedCity: String = ""
+    var receivedGender: String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         self.styleService.delegate = self
         
         let receivedCity = user.objectForKey("city_default") as! String
+        let receivedGender = user.objectForKey("gender_default") as! String
+
         
         self.weatherService.getWeather(receivedCity)
         
@@ -87,7 +91,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         // Get style
         let weatherTemp = (weather.temp - 273.5)
-        self.styleService.getStyle(weatherTemp, icon: weather.icon)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
     }
     
     func setStyle(style: Style) {

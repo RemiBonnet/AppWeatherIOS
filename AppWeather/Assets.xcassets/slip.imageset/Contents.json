@@ -2,7 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+<<<<<<< HEAD
       "filename" : "slip-1.png",
+=======
+      "filename" : "slip.png",
+>>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
       "scale" : "1x"
     },
     {

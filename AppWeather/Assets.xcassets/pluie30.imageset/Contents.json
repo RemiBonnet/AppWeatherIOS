@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "bottes-1.png",
-=======
-      "filename" : "botte.png",
->>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
+      "filename" : "pluie30.png",
       "scale" : "1x"
     },
     {

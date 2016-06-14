@@ -17,6 +17,7 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
     var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedCity: String = ""
+    var receivedGender: String = ""
     
     @IBOutlet weak var cityTomorrowLabel: UILabel!
     @IBOutlet weak var nameTomorrowLabel: UILabel!
@@ -25,6 +26,7 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
     @IBOutlet weak var tempTomorrowLabel: UILabel!
     @IBOutlet weak var iconWeather: UIImageView!
     
+    @IBOutlet weak var clothes: UIImageView!
     @IBOutlet weak var background: UIImageView!
     
     override func viewDidLoad() {
@@ -37,6 +39,7 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
         // Data user
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedCity = user.objectForKey("city_default") as! String
+        let receivedGender = user.objectForKey("gender_default") as! String
         
         // Get tomorrow weather
         self.weatherService.getTomorrowWeather(receivedCity)
@@ -44,8 +47,7 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
         // City
         cityTomorrowLabel.text = receivedCity.capitalizedString
 
-        // Name
-        nameTomorrowLabel.text = "HELLO \(receivedName.uppercaseString),"
+        // Tomorrow
         nameTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         
         // Date
@@ -65,9 +67,6 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
     }
     
     func setWeather(weather: Weather) {
-        // Description
-        descriptionTomorrowLabel.text = weather.description.capitalizedString
-        descriptionTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
         // Temperature
         tempTomorrowLabel.text = "\(Int(weather.temp - 273.5))°"
         tempTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
@@ -75,12 +74,17 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
         iconWeather.image = UIImage(named: weather.icon)
         
         let weatherTemp = (weather.temp - 273.5)
-        self.styleService.getStyle(weatherTemp, icon: weather.icon)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
     }
     
     func setStyle(style: Style) {
         // Background
         background.image = UIImage(named: style.background)
+        // Description
+        descriptionTomorrowLabel.text = style.description.capitalizedString
+        descriptionTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
+        // Clothes
+        clothes.image = UIImage(named: style.clothes)
     }
     
     

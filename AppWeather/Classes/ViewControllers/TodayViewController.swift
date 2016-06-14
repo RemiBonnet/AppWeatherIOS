@@ -17,6 +17,8 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedCity: String = ""
+    var receivedGender: String = ""
+
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -25,11 +27,14 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     @IBOutlet weak var iconWeather: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
     
+<<<<<<< HEAD
+    @IBOutlet weak var clothes: UIImageView!
+    @IBOutlet weak var background: UIImageView!
+=======
     @IBOutlet weak var topStyle: UIImageView!
     @IBOutlet weak var accessoryStyle: UIImageView!
     @IBOutlet weak var botStyle: UIImageView!
-    
-    @IBOutlet weak var background: UIImageView!
+>>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
     
     
     override func viewDidLoad() {
@@ -42,6 +47,8 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         // Data user
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedCity = user.objectForKey("city_default") as! String
+        let receivedGender = user.objectForKey("gender_default") as! String
+        
         
         // Get weather
         self.weatherService.getWeather(receivedCity)
@@ -65,9 +72,6 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     }
     
     func setWeather(weather: Weather) {
-        // Description
-        descriptionLabel.text = weather.description.capitalizedString
-        descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
         // Temperature
         tempLabel.text = "\(Int(weather.temp - 273.5))°"
         tempLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
@@ -75,19 +79,31 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         iconWeather.image = UIImage(named: weather.icon)
         
         // Get style
+<<<<<<< HEAD
         let weatherTemp = (weather.temp - 273.5)
-        self.styleService.getStyle(weatherTemp, icon: weather.icon)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
     }
     
     func setStyle(style: Style) {
         // Background
         background.image = UIImage(named: style.background)
-//        // Top Style
-////        topStyle.image = UIImage(named: style.mainClothe)
-//        // Accessory
-//        accessoryStyle.image = UIImage(named: style.firstAccessory)
-//        // Bot Style
-//        botStyle.image = UIImage(named: style.secondAccessory)
+        // Clothes
+        clothes.image = UIImage(named: style.clothes)
+        // Description
+        descriptionLabel.text = style.description.capitalizedString
+        descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
+=======
+        self.styleService.getStyle(weather.temp, icon: weather.icon)
+    }
+    
+    func setStyle(style: Style) {
+        // Top Style
+        topStyle.image = UIImage(named: style.mainClothe)
+        // Accessory
+        accessoryStyle.image = UIImage(named: style.firstAccessory)
+        // Bot Style
+        botStyle.image = UIImage(named: style.secondAccessory)
+>>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
     }
     
     override func didReceiveMemoryWarning() {
