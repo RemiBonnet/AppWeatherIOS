@@ -9,16 +9,12 @@
 import Foundation
 
 struct Style {
-    let mainClothe: String
-    let firstAccessory: String
-    let secondAccessory: String
+    let clothes: String
     let background: String
     let description: String
     
-    init(mainClothe: String, firstAccessory: String, secondAccessory: String, background: String, description: String) {
-        self.mainClothe = mainClothe
-        self.firstAccessory = firstAccessory
-        self.secondAccessory = secondAccessory
+    init(clothes: String, background: String, description: String) {
+        self.clothes = clothes
         self.background = background
         self.description = description
     }
