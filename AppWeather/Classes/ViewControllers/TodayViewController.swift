@@ -29,8 +29,6 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     
     @IBOutlet weak var clothes: UIImageView!
     @IBOutlet weak var background: UIImageView!
-
-    
     
     
     override func viewDidLoad() {
@@ -44,7 +42,6 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedCity = user.objectForKey("city_default") as! String
         let receivedGender = user.objectForKey("gender_default") as! String
-        
         
         // Get weather
         self.weatherService.getWeather(receivedCity)
