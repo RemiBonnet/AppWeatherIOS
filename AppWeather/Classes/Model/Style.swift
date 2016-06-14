@@ -12,10 +12,12 @@ struct Style {
     let mainClothe: String
     let firstAccessory: String
     let secondAccessory: String
+    let background: String
     
-    init(mainClothe: String, firstAccessory: String, secondAccessory: String) {
+    init(mainClothe: String, firstAccessory: String, secondAccessory: String, background: String) {
         self.mainClothe = mainClothe
         self.firstAccessory = firstAccessory
         self.secondAccessory = secondAccessory
+        self.background = background
     }
 }
