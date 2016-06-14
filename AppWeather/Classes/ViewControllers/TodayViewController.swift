@@ -29,6 +29,8 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     @IBOutlet weak var accessoryStyle: UIImageView!
     @IBOutlet weak var botStyle: UIImageView!
     
+    @IBOutlet weak var background: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,16 +75,19 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         iconWeather.image = UIImage(named: weather.icon)
         
         // Get style
-        self.styleService.getStyle(weather.temp, icon: weather.icon)
+        let weatherTemp = (weather.temp - 273.5)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon)
     }
     
     func setStyle(style: Style) {
-        // Top Style
-        topStyle.image = UIImage(named: style.mainClothe)
-        // Accessory
-        accessoryStyle.image = UIImage(named: style.firstAccessory)
-        // Bot Style
-        botStyle.image = UIImage(named: style.secondAccessory)
+        // Background
+        background.image = UIImage(named: style.background)
+//        // Top Style
+////        topStyle.image = UIImage(named: style.mainClothe)
+//        // Accessory
+//        accessoryStyle.image = UIImage(named: style.firstAccessory)
+//        // Bot Style
+//        botStyle.image = UIImage(named: style.secondAccessory)
     }
     
     override func didReceiveMemoryWarning() {
