@@ -27,14 +27,10 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
     @IBOutlet weak var iconWeather: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
     
-<<<<<<< HEAD
     @IBOutlet weak var clothes: UIImageView!
     @IBOutlet weak var background: UIImageView!
-=======
-    @IBOutlet weak var topStyle: UIImageView!
-    @IBOutlet weak var accessoryStyle: UIImageView!
-    @IBOutlet weak var botStyle: UIImageView!
->>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
+
+    
     
     
     override func viewDidLoad() {
@@ -79,7 +75,6 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         iconWeather.image = UIImage(named: weather.icon)
         
         // Get style
-<<<<<<< HEAD
         let weatherTemp = (weather.temp - 273.5)
         self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
     }
@@ -92,18 +87,6 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         // Description
         descriptionLabel.text = style.description.capitalizedString
         descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
-=======
-        self.styleService.getStyle(weather.temp, icon: weather.icon)
-    }
-    
-    func setStyle(style: Style) {
-        // Top Style
-        topStyle.image = UIImage(named: style.mainClothe)
-        // Accessory
-        accessoryStyle.image = UIImage(named: style.firstAccessory)
-        // Bot Style
-        botStyle.image = UIImage(named: style.secondAccessory)
->>>>>>> 1ab0d83289e151f477727f21400b8e36f76adb51
     }
     
     override func didReceiveMemoryWarning() {
