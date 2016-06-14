@@ -29,31 +29,31 @@ class StyleService {
             switch (temp) {
             case let temp where temp < 0:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "echarpe")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "rain_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 0 && temp < 10:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "parapluie", secondAccessory: "echarpe")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "parapluie", secondAccessory: "echarpe", background: "rain_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 10 && temp < 20:
                 
-                let style = Style(mainClothe: "cire", firstAccessory: "botte", secondAccessory: "echarpe")
+                let style = Style(mainClothe: "cire", firstAccessory: "botte", secondAccessory: "echarpe", background: "rain_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 20 && temp < 30:
                 
-                let style = Style(mainClothe: "pullover", firstAccessory: "parapluie", secondAccessory: "basket")
+                let style = Style(mainClothe: "pullover", firstAccessory: "parapluie", secondAccessory: "basket", background: "rain_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 30:
                 
-                let style = Style(mainClothe: "slip", firstAccessory: "parapluie", secondAccessory: "lunettes")
+                let style = Style(mainClothe: "slip", firstAccessory: "parapluie", secondAccessory: "lunettes", background: "rain_background")
             
                 taskStyle(style)
                 
@@ -67,31 +67,31 @@ class StyleService {
             switch (temp) {
             case let temp where temp < 0:
                 
-                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "gant")
+                let style = Style(mainClothe: "doudoune", firstAccessory: "bonnet", secondAccessory: "gant", background: "sun_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 0 && temp < 10:
                 
-                let style = Style(mainClothe: "pullover", firstAccessory: "bonnet", secondAccessory: "echarpe")
+                let style = Style(mainClothe: "pullover", firstAccessory: "bonnet", secondAccessory: "echarpe", background: "sun_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 10 && temp < 20:
                 
-                let style = Style(mainClothe: "chemise", firstAccessory: "casquette", secondAccessory: "basket")
+                let style = Style(mainClothe: "chemise", firstAccessory: "casquette", secondAccessory: "basket", background: "sun_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 20 && temp < 30:
                 
-                let style = Style(mainClothe: "debardeur", firstAccessory: "lunettes", secondAccessory: "tong")
+                let style = Style(mainClothe: "debardeur", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background")
                 
                 taskStyle(style)
                 
             case let temp where temp >= 30:
                 
-                let style = Style(mainClothe: "slip", firstAccessory: "lunettes", secondAccessory: "tong")
+                let style = Style(mainClothe: "slip", firstAccessory: "lunettes", secondAccessory: "tong", background: "hot_background")
             
                 taskStyle(style)
                 
