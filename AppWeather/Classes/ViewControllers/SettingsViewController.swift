@@ -62,9 +62,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
         // Gender
         genderLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 18)
-
-        
-        
     }
     
     override func didReceiveMemoryWarning() {

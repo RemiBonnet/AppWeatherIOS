@@ -8,14 +8,16 @@
 
 import UIKit
 
-class TomorrowViewController: UIViewController, WeatherServiceDelegate {
+class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleServiceDelegate {
     
     // MARK: Properties
     let weatherService = WeatherService()
+    let styleService = StyleService()
     
     var user = NSUserDefaults()
     var receivedName: String = ""
     var receivedCity: String = ""
+    var receivedGender: String = ""
     
     @IBOutlet weak var cityTomorrowLabel: UILabel!
     @IBOutlet weak var nameTomorrowLabel: UILabel!
@@ -24,25 +26,28 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate {
     @IBOutlet weak var tempTomorrowLabel: UILabel!
     @IBOutlet weak var iconWeather: UIImageView!
     
+    @IBOutlet weak var clothes: UIImageView!
+    @IBOutlet weak var background: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.weatherService.delegate = self
+        self.styleService.delegate = self
         
         // Data user
         let receivedName = user.objectForKey("name_default")  as! String
         let receivedCity = user.objectForKey("city_default") as! String
+        let receivedGender = user.objectForKey("gender_default") as! String
         
         // Get tomorrow weather
-//        self.weatherService.getTomorrowWeather(receivedCity)
+        self.weatherService.getTomorrowWeather(receivedCity)
         
         // City
         cityTomorrowLabel.text = receivedCity.capitalizedString
 
-        // Name
-        nameTomorrowLabel.text = "HELLO \(receivedName.uppercaseString),"
+        // Tomorrow
         nameTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         
         // Date
@@ -52,8 +57,6 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate {
                    .dateByAddingUnit(.Day,value: 1,toDate: NSDate(), options: [])!
         }
         
-        print(oneDayfromNow)
-        
         let dateFormatter = NSDateFormatter()
         dateFormatter.timeStyle = .MediumStyle
         dateFormatter.dateFormat = "EEEE"
@@ -61,19 +64,27 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate {
         
         dayTomorrowLabel.text = "\(dateFormatter.stringFromDate(oneDayfromNow).capitalizedString)"
         dayTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 22)
-        
-        
     }
     
     func setWeather(weather: Weather) {
-        // Description
-        descriptionTomorrowLabel.text = weather.description.capitalizedString
-        descriptionTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
         // Temperature
         tempTomorrowLabel.text = "\(Int(weather.temp - 273.5))°"
         tempTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 25)
         // Icon
         iconWeather.image = UIImage(named: weather.icon)
+        
+        let weatherTemp = (weather.temp - 273.5)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
+    }
+    
+    func setStyle(style: Style) {
+        // Background
+        background.image = UIImage(named: style.background)
+        // Description
+        descriptionTomorrowLabel.text = style.description.capitalizedString
+        descriptionTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
+        // Clothes
+        clothes.image = UIImage(named: style.clothes)
     }
     
     

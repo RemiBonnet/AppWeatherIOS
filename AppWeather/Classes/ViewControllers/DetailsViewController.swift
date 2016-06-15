@@ -8,15 +8,18 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeatherServiceDelegate {
+class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WeatherServiceDelegate, StyleServiceDelegate {
     
     // MARK: Properties
     let weatherService = WeatherService()
+    let styleService = StyleService()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var background: UIImageView!
     
     var sunrise: Double = 0.0
     var namesData = ["SUNRISE","SUNSET","HUMIDITY","WIND SPEED"]
@@ -24,14 +27,19 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var user = NSUserDefaults()
     var receivedCity: String = ""
+    var receivedGender: String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.weatherService.delegate = self
+        self.styleService.delegate = self
         
         let receivedCity = user.objectForKey("city_default") as! String
+        let receivedGender = user.objectForKey("gender_default") as! String
+
         
         self.weatherService.getWeather(receivedCity)
         
@@ -80,6 +88,15 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         data[3] = "\(wind) m/s"
         
         tableView.reloadData()
+        
+        // Get style
+        let weatherTemp = (weather.temp - 273.5)
+        self.styleService.getStyle(weatherTemp, icon: weather.icon, gender: receivedGender)
+    }
+    
+    func setStyle(style: Style) {
+        // Background
+        background.image = UIImage(named: style.background)
     }
     
     
