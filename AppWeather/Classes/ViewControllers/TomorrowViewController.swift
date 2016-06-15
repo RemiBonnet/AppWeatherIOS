@@ -37,9 +37,9 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
         self.styleService.delegate = self
         
         // Data user
-        let receivedName = user.objectForKey("name_default")  as! String
-        let receivedCity = user.objectForKey("city_default") as! String
-        let receivedGender = user.objectForKey("gender_default") as! String
+        receivedName = user.objectForKey("name_default")  as! String
+        receivedCity = user.objectForKey("city_default") as! String
+        receivedGender = user.objectForKey("gender_default") as! String
         
         // Get tomorrow weather
         self.weatherService.getTomorrowWeather(receivedCity)
@@ -81,7 +81,7 @@ class TomorrowViewController: UIViewController, WeatherServiceDelegate, StyleSer
         // Background
         background.image = UIImage(named: style.background)
         // Description
-        descriptionTomorrowLabel.text = style.description.capitalizedString
+        descriptionTomorrowLabel.text = style.description
         descriptionTomorrowLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
         // Clothes
         clothes.image = UIImage(named: style.clothes)

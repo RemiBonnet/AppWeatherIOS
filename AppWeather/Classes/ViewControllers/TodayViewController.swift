@@ -39,9 +39,9 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         self.styleService.delegate = self
         
         // Data user
-        let receivedName = user.objectForKey("name_default")  as! String
-        let receivedCity = user.objectForKey("city_default") as! String
-        let receivedGender = user.objectForKey("gender_default") as! String
+        receivedName = user.objectForKey("name_default")  as! String
+        receivedCity = user.objectForKey("city_default") as! String
+        receivedGender = user.objectForKey("gender_default") as! String
         
         // Get weather
         self.weatherService.getWeather(receivedCity)
@@ -82,7 +82,7 @@ class TodayViewController: UIViewController, StyleServiceDelegate, WeatherServic
         // Clothes
         clothes.image = UIImage(named: style.clothes)
         // Description
-        descriptionLabel.text = style.description.capitalizedString
+        descriptionLabel.text = style.description
         descriptionLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 20)
     }
     
