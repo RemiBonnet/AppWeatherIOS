@@ -37,6 +37,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         // Data user
         receivedName = user.objectForKey("name_default")  as! String
         receivedCity = user.objectForKey("city_default") as! String
+        receivedGender = user.objectForKey("gender_default") as! String
         
         // Title
         textSettings.font = UIFont(name: "BrandonGrotesque-Black", size: 25)
@@ -62,6 +63,12 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
         // Gender
         genderLabel.font = UIFont(name: "BrandonGrotesque-Bold", size: 18)
+        
+        if receivedGender == "man" {
+            genderController.selectedSegmentIndex = 0
+        } else {
+            genderController.selectedSegmentIndex = 1
+        }
     }
     
     override func didReceiveMemoryWarning() {
