@@ -35,8 +35,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
         
         // Data user
-        let receivedName = user.objectForKey("name_default")  as! String
-        let receivedCity = user.objectForKey("city_default") as! String
+        receivedName = user.objectForKey("name_default")  as! String
+        receivedCity = user.objectForKey("city_default") as! String
         
         // Title
         textSettings.font = UIFont(name: "BrandonGrotesque-Black", size: 25)

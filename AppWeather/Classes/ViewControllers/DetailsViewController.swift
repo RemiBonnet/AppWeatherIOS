@@ -37,8 +37,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         self.weatherService.delegate = self
         self.styleService.delegate = self
         
-        let receivedCity = user.objectForKey("city_default") as! String
-        let receivedGender = user.objectForKey("gender_default") as! String
+        receivedCity = user.objectForKey("city_default") as! String
+        receivedGender = user.objectForKey("gender_default") as! String
 
         
         self.weatherService.getWeather(receivedCity)
