@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
-class CityViewController: UIViewController, UITextFieldDelegate {
+class CityViewController: UIViewController, UITextFieldDelegate, LocationServiceDelegate {
     
     // MARK: Properties
     
@@ -23,10 +24,14 @@ class CityViewController: UIViewController, UITextFieldDelegate {
     var receivedName: String = ""
     var receivedGender: String = ""
     var receivedCity: String = ""
+    var receivedLat: Double = 0.0
+    var receivedLon: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional) setup after loading the view, typically from a nib.
+        
+        LocationService.sharedInstance.delegate = self
         
         let gradientLayer = CAGradientLayer()
         
@@ -80,7 +85,48 @@ class CityViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func tappedCityAction(sender: AnyObject) {
-        receivedCity =  cityUserTextField.text!
+        
+        if cityUserTextField.text! == "" {
+            receivedCity = "Paris"
+        } else {
+            receivedCity =  cityUserTextField.text!
+        }
+        
         user.setObject(receivedCity, forKey: "city_default")
+    }
+    
+    
+    @IBAction func tappedGeolocButtonAction(sender: UIButton!) {
+        LocationService.sharedInstance.startUpdatingLocation()
+    }
+    
+    // MARK: - LocationServiceDelegate
+    func tracingLocation(currentLocation: CLLocation) {
+        receivedLat = currentLocation.coordinate.latitude
+        receivedLon = currentLocation.coordinate.longitude
+        
+        LocationService.sharedInstance.stopUpdatingLocation()
+        
+        let geoCoder = CLGeocoder()
+        let location = CLLocation(latitude: receivedLat as CLLocationDegrees, longitude: receivedLon as CLLocationDegrees)
+        
+        geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
+            
+            let placeArray = placemarks as [CLPlacemark]!
+            
+            var placeMark: CLPlacemark!
+            placeMark = placeArray[0]
+                        
+            if let city = placeMark.addressDictionary?["City"] as? NSString {
+                self.receivedCity = city as String
+                print(self.receivedCity)
+                self.cityUserTextField.text! = self.receivedCity
+            }
+            
+        }
+    }
+    
+    func tracingLocationDidFailWithError(error: NSError) {
+        print("tracing Location Error: \(error.description)")
     }
 }

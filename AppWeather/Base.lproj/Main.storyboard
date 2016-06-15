@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uF6-6j-jGq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uF6-6j-jGq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -393,7 +393,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="geoButton:" destination="DKV-Od-SjL" eventType="touchUpInside" id="2Wu-2D-Qwz"/>
+                                    <action selector="tappedGeolocButtonAction:" destination="DKV-Od-SjL" eventType="touchUpInside" id="9pb-O6-OAp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdI-R0-wPL">
@@ -1211,7 +1211,7 @@ WRONG ?</string>
         <image name="pluie0" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jca-gb-P2l"/>
+        <segue reference="Dzg-lv-S8X"/>
         <segue reference="1ci-zs-c0M"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
