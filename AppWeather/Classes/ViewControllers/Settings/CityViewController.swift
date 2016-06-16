@@ -55,8 +55,8 @@ class CityViewController: UIViewController, UITextFieldDelegate, LocationService
         user.setObject(receivedName, forKey: "name_default")
         user.setObject(receivedGender, forKey: "gender_default")
         
-        cityUserTextField.font = UIFont(name: "BrandonGrotesque-Regular", size: 24)
-        leastLabel.font = UIFont(name: "BrandonGrotesque-Black", size: 30)
+        cityUserTextField.font = UIFont(name: "BrandonGrotesque-Light", size: 22)
+        leastLabel.font = UIFont(name: "BrandonGrotesque-Black", size: 27)
         findLabel.font = UIFont(name: "BrandonGrotesque-Medium", size: 19)
         doneButton.titleLabel!.font = UIFont(name: "BrandonGrotesque-Medium", size: 15)
         geoButton.titleLabel!.font = UIFont(name: "BrandonGrotesque-Black", size: 12)
