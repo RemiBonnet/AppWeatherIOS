@@ -39,9 +39,14 @@ class NameViewController: UIViewController, UITextFieldDelegate {
             nameUserTextField.delegate = self
         }
         
-        nameUserTextField.font = UIFont(name: "BrandonGrotesque-Regular", size: 28)
+        hello.font = UIFont(name: "BrandonGrotesque-Medium", size: 30)
         
-        hello.font = UIFont(name: "BrandonGrotesque-Black", size: 30)
+        let attributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName : UIFont(name: "BrandonGrotesque-Light", size: 22)!
+        ]
+        nameUserTextField.font = UIFont(name: "BrandonGrotesque-Light", size: 22)
+        nameUserTextField.attributedPlaceholder = NSAttributedString(string: "Your name", attributes:attributes)
         
         
     }
@@ -49,9 +54,7 @@ class NameViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLayoutSubviews() {
         let checkName = user.objectForKey("name_default")
         
-        if (checkName != nil) {
-            print("check\(checkName)")
-            
+        if (checkName != nil) {            
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let startStoryboard = mainStoryboard.instantiateViewControllerWithIdentifier("MYNAV") as? UINavigationController
         

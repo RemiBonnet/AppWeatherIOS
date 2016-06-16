@@ -15,7 +15,6 @@
 		A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A502A14A1D05D74900BCC0E2 /* Main.storyboard */; };
 		A50E9D8D1D0C30F800C1A361 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */; };
 		A50E9D8F1D0D7F7600C1A361 /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E9D8E1D0D7F7600C1A361 /* TomorrowViewController.swift */; };
-		A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524CC181D08CA9A00093B10 /* ViewController.swift */; };
 		A5270F421D0B6DAD00C7041A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */; };
 		A5270F451D0B8CB000C7041A /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5270F441D0B8CB000C7041A /* DetailsCell.swift */; };
 		A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,9 @@
 		A5D7DE101D09CBA000DCB11B /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */; };
 		A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */; };
 		A5D7DE121D09CBA000DCB11B /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5D7DE0E1D09CBA000DCB11B /* Brandon_med.otf */; };
+		A5FE364F1D12155800316C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5FE364E1D12155800316C99 /* Assets.xcassets */; };
+		A5FE36511D12156C00316C99 /* StyleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FE36501D12156C00316C99 /* StyleService.swift */; };
+		A5FE36531D12157C00316C99 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FE36521D12157C00316C99 /* Style.swift */; };
 		E90B16911D030E3C00F4F905 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16901D030E3C00F4F905 /* Weather.swift */; };
 		E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16921D030EFF00F4F905 /* UrlBuilder.swift */; };
 		E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B16941D03111F00F4F905 /* WeatherService.swift */; };
@@ -43,7 +45,6 @@
 		A502A14B1D05D74900BCC0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A50E9D8E1D0D7F7600C1A361 /* TomorrowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
-		A524CC181D08CA9A00093B10 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A5270F441D0B8CB000C7041A /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsCell.swift; path = Cell/DetailsCell.swift; sourceTree = "<group>"; };
 		A52B91701D03089700D26A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		A5D7DE0C1D09CBA000DCB11B /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
 		A5D7DE0D1D09CBA000DCB11B /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
 		A5D7DE0E1D09CBA000DCB11B /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		A5FE364E1D12155800316C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5FE36501D12156C00316C99 /* StyleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleService.swift; sourceTree = "<group>"; };
+		A5FE36521D12157C00316C99 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		E90B16901D030E3C00F4F905 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E90B16921D030EFF00F4F905 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		E90B16941D03111F00F4F905 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				E9E2C3EE1D02EED300F10EBC /* Classes */,
 				A52B916F1D03089700D26A59 /* LaunchScreen.storyboard */,
 				A502A14A1D05D74900BCC0E2 /* Main.storyboard */,
+				A5FE364E1D12155800316C99 /* Assets.xcassets */,
 				A57AD6471CFF0B9D009DDFE4 /* Info.plist */,
 			);
 			path = AppWeather;
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E2C3F11D02EED300F10EBC /* ModelController.swift */,
+				A5FE36521D12157C00316C99 /* Style.swift */,
 				E90B16901D030E3C00F4F905 /* Weather.swift */,
 			);
 			path = Model;
@@ -167,6 +173,7 @@
 			children = (
 				E90B16921D030EFF00F4F905 /* UrlBuilder.swift */,
 				E90B16941D03111F00F4F905 /* WeatherService.swift */,
+				A5FE36501D12156C00316C99 /* StyleService.swift */,
 				E9CE0DBD1D062101009DFD59 /* LocationService.swift */,
 			);
 			path = Network;
@@ -177,7 +184,6 @@
 			children = (
 				A502A1431D0577E500BCC0E2 /* Settings */,
 				81BC3A301D09A55E004E65A5 /* StyleGuide */,
-				A524CC181D08CA9A00093B10 /* ViewController.swift */,
 				E9E2C3F51D02EED300F10EBC /* TodayViewController.swift */,
 				A5270F411D0B6DAD00C7041A /* DetailsViewController.swift */,
 				A50E9D8C1D0C30F800C1A361 /* SettingsViewController.swift */,
@@ -260,6 +266,7 @@
 				A5D7DE111D09CBA000DCB11B /* Brandon_light.otf in Resources */,
 				A502A14C1D05D74900BCC0E2 /* Main.storyboard in Resources */,
 				A52B91711D03089700D26A59 /* LaunchScreen.storyboard in Resources */,
+				A5FE364F1D12155800316C99 /* Assets.xcassets in Resources */,
 				A5D7DE121D09CBA000DCB11B /* Brandon_med.otf in Resources */,
 				A5D7DE0F1D09CBA000DCB11B /* Brandon_bld.otf in Resources */,
 			);
@@ -327,13 +334,14 @@
 				E9CE0DBE1D062101009DFD59 /* LocationService.swift in Sources */,
 				A50E9D8D1D0C30F800C1A361 /* SettingsViewController.swift in Sources */,
 				E9E2C3F91D02EED300F10EBC /* TodayViewController.swift in Sources */,
+				A5FE36531D12157C00316C99 /* Style.swift in Sources */,
 				A502A1491D05A70D00BCC0E2 /* CityViewController.swift in Sources */,
 				81BC3A321D09A55E004E65A5 /* UIColor+HLLAdditions.swift.swift in Sources */,
 				E90B16931D030EFF00F4F905 /* UrlBuilder.swift in Sources */,
-				A524CC191D08CA9A00093B10 /* ViewController.swift in Sources */,
 				E9E2C3F71D02EED300F10EBC /* ModelController.swift in Sources */,
 				E90B16911D030E3C00F4F905 /* Weather.swift in Sources */,
 				A5270F421D0B6DAD00C7041A /* DetailsViewController.swift in Sources */,
+				A5FE36511D12156C00316C99 /* StyleService.swift in Sources */,
 				E90B16951D03111F00F4F905 /* WeatherService.swift in Sources */,
 				A50E9D8F1D0D7F7600C1A361 /* TomorrowViewController.swift in Sources */,
 			);
